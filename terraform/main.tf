@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-centrl-1a"
 }
 
 # VPC
@@ -38,7 +38,7 @@ resource "aws_subnet" "subnet_us_east_1b_private" {
 resource "aws_subnet" "subnet_us_east_1c_private" {
   vpc_id                  = aws_vpc.my_vpc.id
   cidr_block              = "10.0.3.0/24"
-  availability_zone       = "us-east-1c"
+  availability_zone       = "eu-central-1a"
   map_public_ip_on_launch = false  # Private subnet
 
   tags = {
@@ -79,7 +79,7 @@ resource "aws_security_group" "ec2_sg" {
     from_port = 22
     to_port   = 22
     protocol  = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/16"]
   }
   ingress {
     from_port = 27017
@@ -150,7 +150,7 @@ resource "aws_docdb_subnet_group" "subnet_group" {
 }
 resource "aws_docdb_cluster" "docdb_cluster" {
   cluster_identifier   = "docdb-cluster"
-  availability_zones   = ["us-east-1a","us-east-1b","us-east-1c"]  # Replace with your desired AZs
+  availability_zones   = ["eu-central-1a","us-east-1b","us-east-1c"]  # Replace with your desired AZs
   engine_version       = "4.0.0"
   master_username      = "adminuser"
   master_password      = "password123"  # Replace with your own strong password
