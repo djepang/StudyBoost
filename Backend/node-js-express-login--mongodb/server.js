@@ -81,6 +81,17 @@ Role.estimatedDocumentCount((err, count) => {
             })
             );
 
+            app.use(
+                dbConfig({
+                    name: "bezkoder-session",
+                    keys: ["COOKIE_SECRET"], // should use as secret environment variable
+                    httpOnly: true
+
+                    
+                })
+                );
+
+
             // simple route
             app.get("/", (req, res) => {
             res.json({ message: "Welcome to bezkoder application." });
