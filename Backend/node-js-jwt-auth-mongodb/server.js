@@ -2,10 +2,11 @@
 const express = require("express");
 const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
+const dotenv = require("dotenv");
 
+dotenv.config({ path: ".env" });
 
-
-
+const db_key = process.env.PASSWORD;
 // Rest of your code
 
 const app = express();
@@ -25,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 const db = require("./app/models");
 const Role = db.role;
 
-const uri = "mongodb+srv://studyboost:ONpPO6AAOcNapILJ@cluster0.tq5lcmv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = `mongodb+srv://studyboost:${db_key}@cluster0.tq5lcmv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 db.mongoose
   .connect(uri, {
     useNewUrlParser: true,
@@ -42,7 +43,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "Welcome armel to bezkoder application." });
 });
 
 // routes
