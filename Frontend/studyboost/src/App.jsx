@@ -1,15 +1,27 @@
-import React from 'react';
-import HomePage from './HomePage';
-import FutureComponent from './FutureComponent'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import StartPage from './StartPage';
+import Home from './pages/Home';
+import Futur from './pages/Futur';
+import Header from './pages/Header';
+import Login from './pages/Login';
+import Contact from './pages/Contact';
+import About from './pages/About';
 
-const App = () => {
-    return (
-        <div>
-            <HomePage />
-            <hr />
-            <FutureComponent />
-        </div>
-    );
-};
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+      <StartPage />
+      <hr />
+      <Futur />
+    </Router>
+  );
+}
 
 export default App;

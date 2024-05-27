@@ -1,21 +1,23 @@
 import React from 'react';
-import { GoogleLogin, GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 const GoogleAuth = () => {
-const clientId = 'Enter your client Id';
+  const handleLoginSuccess = (response) => {
+    console.log('Login Success:', response);
+  };
 
-return (
-<GoogleOAuthProvider clientId={clientId}>
-<GoogleLogin
-onSuccess={credentialResponse => {
-console.log(credentialResponse);
-}}
-onError={() => {
-console.log('Login Failed');
-}}
-/>
-</GoogleOAuthProvider>
-);
+  const handleLoginFailure = (error) => {
+    console.log('Login Failed:', error);
+  };
+
+  return (
+    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+      <GoogleLogin
+        onSuccess={handleLoginSuccess}
+        onFailure={handleLoginFailure}
+      />
+    </GoogleOAuthProvider>
+  );
 };
 
 export default GoogleAuth;
