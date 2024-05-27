@@ -1,6 +1,6 @@
 import React from 'react';
-import Body from './Body';
-import Category3DGraphic from './Category3DGraphic';
+import Body from './pages/Body';
+import Category3DGraphic from './components/Category3DGraphic';
 
 const StartPage = () => {
     return (
