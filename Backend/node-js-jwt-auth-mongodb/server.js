@@ -43,7 +43,9 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome armel to bezkoder application." });
+  res.json({ message: "Welcome Armel Thiery D to the best Studyboost application of the world" });
+ 
+
 });
 
 // routes
