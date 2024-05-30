@@ -4,6 +4,10 @@ const cors = require("cors");
 const dbConfig = require("./app/config/db.config");
 const dotenv = require("dotenv");
 
+
+
+
+
 dotenv.config({ path: ".env" });
 
 const db_key = process.env.PASSWORD;
