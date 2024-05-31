@@ -1,99 +1,42 @@
+const express = require('express');
+const cors = require('cors');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose'); // Add this line to require mongoose
+const authRoutes = require('./app/routes/authRoutes');
 
-const express = require("express");
-const cors = require("cors");
-const dbConfig = require("./app/config/db.config");
-const dotenv = require("dotenv");
-
-
-
-
-
-dotenv.config({ path: ".env" });
-
-const db_key = process.env.PASSWORD;
-// Rest of your code
+dotenv.config({ path: '.env' }); // Load environment variables
 
 const app = express();
+const PORT = process.env.PORT || 8080; // Use environment variable for port or default to 8080
 
-var corsOptions = {
-  origin: "http://localhost:8081"
+// Configure CORS (adjust origins as needed)
+const corsOptions = {
+  origin: 'http://localhost:8081', // Replace with your frontend origin if applicable
 };
-
 app.use(cors(corsOptions));
 
-// parse requests of content-type - application/json
+// Parse incoming JSON data
 app.use(express.json());
 
-// parse requests of content-type - application/x-www-form-urlencoded
-app.use(express.urlencoded({ extended: true }));
-
-const db = require("./app/models");
-const Role = db.role;
-
-const uri = `mongodb+srv://studyboost:${db_key}@cluster0.tq5lcmv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-db.mongoose
-  .connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log("Successfully connect to MongoDB.");
-    initial();
-  })
-  .catch(err => {
-    console.error("Connection error", err);
-    process.exit();
-  });
-
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome Armel Thiery D to the best Studyboost application of the world" });
- 
-
+// Your routes and application logic go here
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to your best StudyBoost application!' });
 });
 
-// routes
-require("./app/routes/auth.routes")(app);
-require("./app/routes/user.routes")(app);
+app.use('/api/auth', authRoutes);
+// Connect to MongoDB
+const uri = process.env.connection_string; // Use the MONGODB_URI environment variable
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('Successfully connected to MongoDB.'))
+  .catch(err => {
+    console.error('Connection error:', err);
+    process.exit(); // Exit on connection error
+  });
 
-// set port, listen for requests
-const PORT = process.env.PORT || 8080;
+// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-
-function initial() {
-  Role.estimatedDocumentCount((err, count) => {
-    if (!err && count === 0) {
-      new Role({
-        name: "user"
-      }).save(err => {
-        if (err) {
-          console.log("error", err);
-        }
-
-        console.log("added 'user' to roles collection");
-      });
-
-      new Role({
-        name: "moderator"
-      }).save(err => {
-        if (err) {
-          console.log("error", err);
-        }
-
-        console.log("added 'moderator' to roles collection");
-      });
-
-      new Role({
-        name: "admin"
-      }).save(err => {
-        if (err) {
-          console.log("error", err);
-        }
-
-        console.log("added 'admin' to roles collection");
-      });
-    }
-  });
-}

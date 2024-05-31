@@ -1,7 +1,7 @@
 module.exports = {
   HOST: "0.0.0.0",
   PORT: 27017,
-  DB: "Studyboost_db",
+  DB: "StudyBoost_db",
  
 
 
