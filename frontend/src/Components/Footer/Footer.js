@@ -5,7 +5,8 @@ class Footer extends React.Component {
     render() {
         return (
             <footer className="p-3 bg-gray-800 text-white text-center">
-                <p>&copy; 2021 StudyBoost</p>
+                <p>&copy; 2024 StudyBoost.Alle Rechte vorbehalten</p>
+                
             </footer>
         );
     }
