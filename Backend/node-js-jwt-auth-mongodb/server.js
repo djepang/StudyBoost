@@ -11,8 +11,11 @@ const PORT = process.env.PORT || 8080; // Use environment variable for port or d
 
 // Configure CORS (adjust origins as needed)
 const corsOptions = {
+
+  origin: 'http://localhost:3000',//allow to connect with my Frontend
   origin: 'http://localhost:8081', // Replace with your frontend origin if applicable
 };
+
 app.use(cors(corsOptions));
 
 // Parse incoming JSON data
@@ -20,7 +23,7 @@ app.use(express.json());
 
 // Your routes and application logic go here
 app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to your best StudyBoost application!' });
+  res.json({ message: 'Welcome to your best StudyBoost application of World!' });
 });
 
 app.use('/api/auth', authRoutes);
