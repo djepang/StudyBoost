@@ -1,18 +1,17 @@
 import React from 'react'
 import Header from '../../Components/Header/Header'
 import Footer from '../../Components/Footer/Footer'
-import KurseContent from '../../Components/KurseContent/KurseContent'
 
-const Kurse = () => {
+const Physik = () => {
     return (
         <div>
             <Header />
-            <KurseContent />
+            <h1>Physik</h1>
+    
+
             <Footer />
         </div>
     )
 }
 
-
-
-export default Kurse
+export default  Physik

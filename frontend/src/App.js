@@ -26,6 +26,7 @@ function App() {
         <Route path='/Notenverbesserung' element={< Notenverbesserung />} />
         <Route path='*' element={<Error />} />
         
+        
       </Routes>
     </div>
   );
