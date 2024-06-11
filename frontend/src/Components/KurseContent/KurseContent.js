@@ -5,7 +5,7 @@ import EnglishImage from '../../assets/english-image.jpg';
 import BiologieImage from '../../assets/biologie-image.jpg';
 import DeutschImage from '../../assets/deutsch-image.jpg';
 import InformatikImage from '../../assets/informatik-image.jpg';
-
+import './KurseContent.css';
 import { Link } from 'react-router-dom';
 
 class KurseContent extends React.Component {
@@ -13,7 +13,12 @@ class KurseContent extends React.Component {
     render() {
         return (
             <div className="flex flex-col items-center justify-center bg-gradient-to-r from-purple-300 via-pink-300 to-blue-200 p-8 space-y-8">
-                <h1 className="text-4xl font-bold text-center text-blue-900">Willkommen bei unseren Kursen</h1>
+                <div className="relative overflow-hidden w-full h-16">
+                <h1 className="text-4xl font-bold text-center text-blue-900 animate-marquee whitespace-nowrap">
+    <span style={{ color: "blue" }}>*Willkommen bei unseren Kursen*</span><span style={{ color: "green" }}>Welcome to our courses</span><span style={{ color: "orange" }}>*Bienvenue dans nos cours*</span><span style={{ color: "red" }}>Ласкаво просимо на наші курси</span><span style={{ color: "purple" }}>*مرحبًا بكم في دوراتنا*</span>
+</h1>
+
+                </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <img src={MathImage} alt="Mathematik" className="rounded-lg shadow-lg w-full h-48 object-cover" />
@@ -67,6 +72,8 @@ class KurseContent extends React.Component {
                                 Informatik
                             </Link>
                         </li>
+
+            
 
                     </ul>
                 </nav>
