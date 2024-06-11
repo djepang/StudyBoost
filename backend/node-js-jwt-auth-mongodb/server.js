@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 8080; // Use environment variable for port or d
 // Configure CORS (adjust origins as needed)
 const corsOptions = {
 
-  origin: 'http://localhost:3000',//allow to connect with my Frontend
-  origin: 'http://localhost:8081', // Replace with your frontend origin if applicable
+  origin: '*',// Allow all origins
+ 
 };
 
 app.use(cors(corsOptions));
