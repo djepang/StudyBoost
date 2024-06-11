@@ -4,6 +4,7 @@ import PhysicsImage from '../../assets/physics-image.jpg';
 import EnglishImage from '../../assets/english-image.jpg';
 import BiologieImage from '../../assets/biologie-image.jpg';
 import DeutschImage from '../../assets/deutsch-image.jpg';
+import InformatikImage from '../../assets/informatik-image.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -20,6 +21,8 @@ class KurseContent extends React.Component {
                     <img src={EnglishImage} alt="Englisch" className="rounded-lg shadow-lg w-full" />
                     <img src={BiologieImage} alt="Biologie" className="rounded-lg shadow-lg w-full" />
                     <img src={DeutschImage} alt="Deutsch" className="rounded-lg shadow-lg w-full" />
+                    <img src={InformatikImage} alt="Informatik" className="rounded-lg shadow-lg w-full" />
+
                 </div>
 
                 <nav className="w-full mt-8">
@@ -58,6 +61,14 @@ class KurseContent extends React.Component {
                                 Biologie
                             </Link>
                         </li>
+
+                        <li>
+                            <Link to="/Informatik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                                <img src={InformatikImage} alt="Informatik" className="h-10 w-10 mr-2 rounded-full" />
+                               Informatik
+                            </Link>
+                        </li>
+
                     </ul>
                 </nav>
             </div>
