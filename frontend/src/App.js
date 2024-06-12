@@ -7,7 +7,7 @@ import Login from './Pages/Login/Login';
 import Error from './Pages/Error/Error';
 import Hausaufgabenhilfe from './Pages/Hausaufgabenhilfe/Hausaufgabenhilfe';
 import Notenverbesserung from './Pages/Notenverbesserung/Notenverbesserung';
-import Register from './Pages/Register/Register'; // Korrekte Importanweisung
+import Register from './Components/Register/Register'; // Korrekte Importanweisung
 
 
 function App() {
@@ -21,7 +21,6 @@ function App() {
         <Route path='/courses' element={<Courses />} />
         <Route path='/help' element={<Help />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/Register' element={<Register />} />
         <Route path='/Hausaufgabenhilfe' element={<Hausaufgabenhilfe />} />
         <Route path='/Notenverbesserung' element={< Notenverbesserung />} />
         <Route path='*' element={<Error />} />
