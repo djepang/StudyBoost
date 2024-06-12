@@ -4,7 +4,7 @@ import MathImage from '../../assets/math-image.jpg';
 
 import { Link } from 'react-router-dom';
 
-class KurseContent extends React.Component {
+class MathematiqueContent extends React.Component {
     state = {}
     render() {
         return (
@@ -38,4 +38,4 @@ class KurseContent extends React.Component {
     }
 }
 
-export default KurseContent;
+export default MathematiqueContent;

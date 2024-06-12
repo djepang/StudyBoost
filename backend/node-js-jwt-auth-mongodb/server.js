@@ -27,11 +27,13 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+
+
 // Connect to MongoDB
 const uri = process.env.connection_string; // Use the MONGODB_URI environment variable
 mongoose.connect(uri, {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+useUnifiedTopology: true,
 })
   .then(() => console.log('Successfully connected to MongoDB.'))
   .catch(err => {
