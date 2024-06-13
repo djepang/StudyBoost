@@ -12,6 +12,7 @@ import Mathematique from './Pages/Mathematique/Mathematique';
 import MathematiqueContent from './Components/MathematiqueContent/MathematiqueContent';
 import MathematiqueContentTest1 from './Components/MathematiqueContentTest1/MathematiqueContentTest1';
 import Klasse1Test from './Pages/Mathematique/Klasse1/Test';
+import Klasse1zahleneinführung from './Pages/Mathematique/Klasse1/zahleneinführung';
 function App() {
   return (
 
@@ -27,8 +28,11 @@ function App() {
         <Route path='/Notenverbesserung' element={< Notenverbesserung />} />
         <Route path='/Mathematique' element={< Mathematique />} />
         <Route path="/Mathematique/Klasse1Test" element={<Klasse1Test />} />
+        <Route path="/Mathematique/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
+
         <Route path="/Mathematique" element={<MathematiqueContent />} />
         <Route path="/Mathematique" element={<MathematiqueContentTest1 />} />
+       
         <Route path='*' element={<Error />} />
         
         
