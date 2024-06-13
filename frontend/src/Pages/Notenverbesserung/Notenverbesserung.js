@@ -7,7 +7,7 @@ const  Notenverbesserung = () => {
         <div>
             <Header />
             <h1> Notenverbesserung</h1>
-         
+
 
             <Footer />
         </div>
