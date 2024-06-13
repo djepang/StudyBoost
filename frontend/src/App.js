@@ -7,35 +7,30 @@ import Login from './Pages/Login/Login';
 import Error from './Pages/Error/Error';
 import Hausaufgabenhilfe from './Pages/Hausaufgabenhilfe/Hausaufgabenhilfe';
 import Notenverbesserung from './Pages/Notenverbesserung/Notenverbesserung';
-import Register from './Components/Register/Register'; // Korrekte Importanweisung
-import Mathematique from './Pages/Mathematique/Mathematique';
-import MathematiqueContent from './Components/MathematiqueContent/MathematiqueContent';
-import MathematiqueContentTest1 from './Components/MathematiqueContentTest1/MathematiqueContentTest1';
-import Klasse1Test from './Pages/Mathematique/Klasse1/Test';
-import Klasse1zahleneinführung from './Pages/Mathematique/Klasse1/zahleneinführung';
+import Register from './Components/Register/Register';
+import Mathematik from './Pages/Mathematik/Mathematik';
+import MathematikContent from './Components/MathematikContent/MathematikContent';
+import MathematikContentTest1 from './Components/MathematikContentTest1/MathematikContentTest1';
+import Klasse1Test from './Pages/Mathematik/Klasse1/Test';
+import Klasse1zahleneinführung from './Pages/Mathematik/Klasse1/zahleneinführung';
+
 function App() {
   return (
-
-  
     <div className="App">
       <Routes>
-        <Route path="/register" element={Register} />
+        <Route path="/register" element={<Register />} />
         <Route path='/' element={<Home />} />
         <Route path='/courses' element={<Courses />} />
         <Route path='/help' element={<Help />} />
         <Route path='/login' element={<Login />} />
         <Route path='/Hausaufgabenhilfe' element={<Hausaufgabenhilfe />} />
-        <Route path='/Notenverbesserung' element={< Notenverbesserung />} />
-        <Route path='/Mathematique' element={< Mathematique />} />
-        <Route path="/Mathematique/Klasse1Test" element={<Klasse1Test />} />
-        <Route path="/Mathematique/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
-
-        <Route path="/Mathematique" element={<MathematiqueContent />} />
-        <Route path="/Mathematique" element={<MathematiqueContentTest1 />} />
-       
+        <Route path='/Notenverbesserung' element={<Notenverbesserung />} />
+        <Route path='/Mathematik' element={<Mathematik />} />
+        <Route path="/Mathematik/Klasse1Test" element={<Klasse1Test />} />
+        <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
+        <Route path="/MathematikContent" element={<MathematikContent />} />
+        <Route path="/MathematikContentTest1" element={<MathematikContentTest1 />} />
         <Route path='*' element={<Error />} />
-        
-        
       </Routes>
     </div>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MathImage from '../../assets/math-image.jpg';
 
-class MathematiqueContent extends React.Component {
+class MathematikContent extends React.Component {
     render() {
         return (
             <div
@@ -36,26 +36,26 @@ class MathematiqueContent extends React.Component {
                 <nav className="w-full mt-8 bg-white bg-opacity-75">
                     <ul className="flex flex-wrap justify-center gap-8">
                         <li>
-                            <Link to="/Mathematique/Klasse1Test" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                            <Link to="/Mathematik/Klasse1Test" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 <img src={MathImage} alt="Klasse1Test" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 1 
                             </Link>
                         </li>
                 
                         <li>
-                            <Link to="/mathematique/Klasse2" className="flex items-center bg-green-600 p-3 rounded-lg text-white shadow-md hover:bg-green-700 transition">
+                            <Link to="/mathematik/Klasse2" className="flex items-center bg-green-600 p-3 rounded-lg text-white shadow-md hover:bg-green-700 transition">
                                 <img src={MathImage} alt="Klasse2" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 2 
                             </Link>
                         </li>
                         <li>
-                            <Link to="/mathematique/Klasse3" className="flex items-center bg-orange-600 p-3 rounded-lg text-white shadow-md hover:bg-orange-700 transition">
+                            <Link to="/mathematik/Klasse3" className="flex items-center bg-orange-600 p-3 rounded-lg text-white shadow-md hover:bg-orange-700 transition">
                                 <img src={MathImage} alt="Klasse3" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 3 
                             </Link>
                         </li>
                         <li>
-                            <Link to="/mathematique/Klasse4" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
+                            <Link to="/mathematik/Klasse4" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
                                 <img src={MathImage} alt="Klasse4" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 4 
                             </Link>
@@ -70,4 +70,4 @@ class MathematiqueContent extends React.Component {
     }
 }
 
-export default MathematiqueContent;
+export default MathematikContent;

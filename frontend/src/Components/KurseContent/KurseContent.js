@@ -32,9 +32,9 @@ class KurseContent extends React.Component {
                 <nav className="w-full mt-8">
                     <ul className="flex flex-wrap justify-center gap-8">
                         <li>
-                            <Link to="/Mathematique" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                            <Link to="/Mathematik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 <img src={MathImage} alt="Mathematik" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                Mathematique
+                                Mathematik
                             </Link>
                         </li>
 
