@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MathersteklasseImage from '../../assets/Mathersteklasse-image.jpg';
 
 const MathematikContentTest1 = () => {
@@ -43,9 +44,9 @@ const MathematikContentTest1 = () => {
                 <nav className="w-full mt-8">
                     <ul className="flex flex-wrap justify-center gap-8">
                         <li>
-                            <a href="zaheneinführung" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
+                            <Link to="/Mathematik/Klasse1zahleneinführung" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
                                 Zahlen und Zählen
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#addition-subtraction" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
@@ -65,3 +66,4 @@ const MathematikContentTest1 = () => {
 }
 
 export default MathematikContentTest1;
+
