@@ -59,6 +59,7 @@ class KurseContent extends React.Component {
                             </Link>
                         </li>
 
+        
                         <li>
                             <Link to="/Biologie" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 <img src={BiologieImage} alt="Biologie" className="h-10 w-10 mr-2 rounded-full object-cover" />
@@ -74,7 +75,6 @@ class KurseContent extends React.Component {
                         </li>
 
             
-
                     </ul>
                 </nav>
             </div>
