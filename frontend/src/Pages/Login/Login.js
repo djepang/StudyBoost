@@ -24,7 +24,7 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="360341916280-m17vkf8kql615n980ag6ijit6ve8754h.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
       <Header />
       <div className="flex items-center justify-center h-screen w-full px-5 sm:px-0">
         <div className="flex bg-white rounded-lg shadow-lg border overflow-hidden max-w-sm lg:max-w-4xl w-full">
