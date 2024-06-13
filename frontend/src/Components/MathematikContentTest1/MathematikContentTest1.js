@@ -1,7 +1,7 @@
 import React from 'react';
 import MathersteklasseImage from '../../assets/Mathersteklasse-image.jpg';
 
-const FirstGradeMathTopics = () => {
+const MathematikContentTest1 = () => {
     return (
         <div
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -64,4 +64,4 @@ const FirstGradeMathTopics = () => {
     );
 }
 
-export default FirstGradeMathTopics;
+export default MathematikContentTest1;

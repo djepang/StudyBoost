@@ -4,8 +4,8 @@ import './zahleneinführung.css';
 
 function zahleneinführung() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="zahleneinführung">
+      <header className="zahleneinführung-header">
         <h1>Einführung in Zahlen und Zählen</h1>
       </header>
       <main>
