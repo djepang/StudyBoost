@@ -4,6 +4,7 @@ import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
+const googleID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -11,7 +12,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Login:', { username, password });
-    // Hier können Sie die API-Anfrage für den normalen Login hinzufügen.
+    
   };
 
   const handleGoogleLoginSuccess = (credentialResponse) => {
@@ -24,7 +25,7 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+    <GoogleOAuthProvider clientId={googleID}>
       <Header />
       <div className="flex items-center justify-center h-screen w-full px-5 sm:px-0">
         <div className="flex bg-white rounded-lg shadow-lg border overflow-hidden max-w-sm lg:max-w-4xl w-full">

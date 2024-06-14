@@ -13,7 +13,7 @@ class Footer extends React.Component {
                     <a href="https://twitter.com/StudyBoostprofile" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
                         <FaTwitter className="text-blue-600 inline-block" />
                     </a>
-                    <a href="https://facebook.com/StudyBoostprofile" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
+                    <a href="https://www.facebook.com/profile.php?id=61561060858517" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
                         <FaFacebook className="text-blue-600 inline-block" />
                     </a>
                 </div>
