@@ -3,21 +3,21 @@ import './zahleneinführung.css';
 
 function Zahleneinführung() {
   return (
-    <div className="Zahleneinführung">
-      <header className="Zahleneinführung-header">
+    <div className="zahleneinfuehrung">
+      <header className="zahleneinführung-header">
         <h1>Einführung in Zahlen und Zählen</h1>
       </header>
       <main>
         <section id="introduction">
           <h2>Einführung in Zahlen bis 20</h2>
           <p>
-            Zahlen sind die Grundlage der Mathematik. 
+            Zahlen sind die Grundlage der Mathematik.
           </p>
           <p>
-           Hier lernen Sie die Zahlen von 1 bis 20 kennen, ihre Schreibweise und wie man sie zählt. 
+            Hier lernen Sie die Zahlen von 1 bis 20 kennen, ihre Schreibweise und wie man sie zählt.
           </p>
           <p>
-          Diese grundlegenden Konzepte sind wichtig für den Einstieg in die Mathematik.
+            Diese grundlegenden Konzepte sind wichtig für den Einstieg in die Mathematik.
           </p>
           <ul>
             <li><strong>1:</strong> Eins</li>
@@ -62,10 +62,9 @@ function Zahleneinführung() {
           <h2>Zahlenlinien</h2>
           <p>
             Zahlenlinien sind eine visuelle Darstellung, um die Position von Zahlen zu zeigen. Sie können verwendet werden, um Addition und Subtraktion zu veranschaulichen.
-            
           </p>
           <p>
-          Zum Beispiel: 
+            Zum Beispiel:
             <strong>0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20</strong>
           </p>
         </section>
@@ -78,4 +77,3 @@ function Zahleneinführung() {
 }
 
 export default Zahleneinführung;
-

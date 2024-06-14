@@ -1,69 +1,61 @@
-/* Allgemeines Styling */
-.zahleneinfuehrung {
+.zahleneinführung {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
-  padding: 20px;
+  color: #333;
+  background-color: #f0f8ff; /* Hintergrundfarbe für den gesamten Container */
 }
 
-.zahleneinfuehrung-header {
-  background-color: #4A4A8C;
+.zahleneinführung-header {
+  background-color: #4682b4; /* Hintergrundfarbe für den Header */
   color: white;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
+}
+
+#introduction {
+  background-color: #faf0e6; /* Hintergrundfarbe für den Einführungsabschnitt */
+  padding: 2rem;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 1rem 0;
 }
 
-main {
-  padding: 20px;
-  background: white;
+#counting-images {
+  background-color: #f5f5dc; /* Hintergrundfarbe für den Abschnitt Zählen durch Bilder */
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #4A4A8C;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 5px 0;
+  margin: 1rem 0;
 }
 
 .image-gallery {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .image-card {
-  background-color: #f9f9f9;
-  padding: 10px;
+  background-color: #fff; /* Hintergrundfarbe für jede Bildkarte */
   border: 1px solid #ddd;
   border-radius: 8px;
-  text-align: center;
-  width: 150px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 1rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+#number-lines {
+  background-color: #ffe4e1; /* Hintergrundfarbe für den Abschnitt Zahlenlinien */
+  padding: 2rem;
   border-radius: 8px;
+  margin: 1rem 0;
 }
 
 footer {
-  background-color: #f1f1f1;
+  background-color: #4682b4; /* Hintergrundfarbe für den Footer */
+  color: white;
   text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  margin-top: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
