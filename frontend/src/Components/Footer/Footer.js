@@ -10,7 +10,7 @@ class Footer extends React.Component {
                     <a href="https://www.linkedin.com/in/studyboost-studyboost-55ba07313" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
                         <FaLinkedin className="text-blue-600 inline-block" />
                     </a>
-                    <a href="https://twitter.com/StudyBoostprofile" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
+                    <a href="https://x.com/SStudyboost" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
                         <FaTwitter className="text-blue-600 inline-block" />
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=61561060858517" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 font-bold">
