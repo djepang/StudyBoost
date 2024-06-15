@@ -9,29 +9,32 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 
-const userAuthContext = createContext();
+const UserAuthContext = createContext();
 
 export function UserAuthContextProvider({ children }) {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null); // Initialisiert auf null statt {}
 
   function logIn(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
   }
-  function Register(email, password) {
+
+  function register(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
   }
+
   function logOut() {
     return signOut(auth);
   }
+
   function googleSignIn() {
     const googleAuthProvider = new GoogleAuthProvider();
     return signInWithPopup(auth, googleAuthProvider);
   }
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
-      console.log("Auth", currentuser);
-      setUser(currentuser);
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log("Auth state changed:", currentUser); // Konsolenausgabe zur Fehlerbehebung
+      setUser(currentUser);
     });
 
     return () => {
@@ -40,14 +43,19 @@ export function UserAuthContextProvider({ children }) {
   }, []);
 
   return (
-    <userAuthContext.Provider
-      value={{ user, logIn, Register, logOut, googleSignIn }}
+    <UserAuthContext.Provider
+      value={{ user, logIn, register, logOut, googleSignIn }}
     >
       {children}
-    </userAuthContext.Provider>
+    </UserAuthContext.Provider>
   );
 }
 
 export function useUserAuth() {
-  return useContext(userAuthContext);
+  const context = useContext(UserAuthContext);
+  console.log("useUserAuth context:", context); // Konsolenausgabe zur Fehlerbehebung
+  if (context === undefined) {
+    throw new Error("useUserAuth must be used within a UserAuthContextProvider");
+  }
+  return context;
 }
