@@ -1,4 +1,5 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 import './zahleneinführung.css';
 
 function Zahleneinführung() {
@@ -67,6 +68,16 @@ function Zahleneinführung() {
             Zum Beispiel:
             <strong>0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20</strong>
           </p>
+        </section>
+
+        <section id="videos">
+          <h2>Lernvideos</h2>
+          <div className="video-container">
+            <YouTube videoId="pvz5kfF6pys" />
+          </div>
+          <div className="video-container">
+            <YouTube videoId="L7kk6Lz8HS4" />
+          </div>
         </section>
       </main>
       <footer>

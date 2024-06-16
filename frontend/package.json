@@ -26,6 +26,7 @@
     "react-navigation": "^5.0.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "react-youtube": "^10.1.0",
     "tcomb-form-native": "^0.6.20",
     "three": "^0.165.0",
     "tw-elements": "^2.0.0",
