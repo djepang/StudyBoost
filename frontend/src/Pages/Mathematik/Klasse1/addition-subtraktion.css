@@ -3,66 +3,65 @@
   padding: 20px;
 }
 
-/* Stile für den Header */
 .header {
+  background-color: #f8f9fa;
+  padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
 }
 
-/* Stile für die Einführung und Aufgaben */
-.introduction, .task {
-  margin-bottom: 30px;
-}
-
-/* Stile für Listen */
-.introduction ul, .task ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.introduction h3, .task h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.introduction li, .task li {
-  margin-bottom: 10px;
-}
-
-/* Stile für den Videocontainer */
-.video-container {
-  margin-bottom: 30px;
-}
-
-/* Stile für die Bildergalerie */
-.image-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-}
-
-/* Stile für Bildkarten */
-.image-card {
-  text-align: center;
-}
-
-/* Stile für Bilder in Bildkarten */
-.image-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Stile für den Footer */
-footer {
-  text-align: center;
-  margin-top: 20px;
-}
 .transparent-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
+  opacity: 0.1;
   z-index: -1;
-  opacity: 0.5; 
+}
+
+.introduction, .task {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.video-container > div {
+  flex: 1 1 300px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.image-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #dee2e6;
 }
