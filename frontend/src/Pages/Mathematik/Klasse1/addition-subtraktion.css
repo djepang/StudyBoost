@@ -1,0 +1,68 @@
+.addition-subtraktion {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Stile für den Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Stile für die Einführung und Aufgaben */
+.introduction, .task {
+  margin-bottom: 30px;
+}
+
+/* Stile für Listen */
+.introduction ul, .task ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.introduction h3, .task h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.introduction li, .task li {
+  margin-bottom: 10px;
+}
+
+/* Stile für den Videocontainer */
+.video-container {
+  margin-bottom: 30px;
+}
+
+/* Stile für die Bildergalerie */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+/* Stile für Bildkarten */
+.image-card {
+  text-align: center;
+}
+
+/* Stile für Bilder in Bildkarten */
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Stile für den Footer */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.transparent-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5; 
+}

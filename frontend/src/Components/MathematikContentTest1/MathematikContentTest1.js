@@ -8,9 +8,9 @@ const MathematikContentTest1 = () => {
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: `url(${MathersteklasseImage})`,
-                minHeight: '100vh', // Vollständige Höhe des Viewports
-                padding: '8rem 2rem', // Innenabstand anpassen
-                color: '#333', // Textfarbe
+                minHeight: '100vh', 
+                padding: '8rem 2rem', 
+                color: '#333', 
             }}
         >
             <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
@@ -49,9 +49,9 @@ const MathematikContentTest1 = () => {
                             </Link>
                         </li>
                         <li>
-                            <a href="#addition-subtraction" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
+                            <Link to="/Mathematik/Klasse1additionsubtraktion" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
                                 Addition und Subtraktion
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a href="#shapes-patterns" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
