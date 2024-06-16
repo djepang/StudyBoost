@@ -1,21 +1,23 @@
 import React from 'react';
 import { Box, Button, Container, Grid, TextField, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
 import { useUserAuth } from '../../context/UserAuthContext';
-import backgroundImage from '../../assets/register-bg.jpg'; // Stelle sicher, dass der Pfad korrekt ist
+import backgroundImage from '../../assets/register-bg.jpg'; // Stellen Sie sicher, dass der Pfad korrekt ist
+import { useNavigate } from 'react-router-dom'; // useNavigate aus react-router-dom importieren
 
 const Register = () => {
   const { register } = useUserAuth();
   const { handleSubmit, register: formRegister, formState: { errors } } = useForm();
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // useNavigate verwenden
 
   const onSubmit = async (data) => {
     try {
       await register(data.email, data.password, data.username); // Hinzufügen des Benutzernamens zur Registrierung
-      navigate('/'); // Weiterleitung nach erfolgreicher Registrierung
+      alert('Erfolgreich registriert! Sie werden zur Startseite weitergeleitet.'); // Beispiel für eine Bestätigungsmeldung
+      navigate('/'); // Weiterleitung zur Startseite nach erfolgreicher Registrierung
     } catch (error) {
       console.error('Fehler bei der Registrierung:', error);
+      alert('Fehler bei der Registrierung. Bitte versuchen Sie es erneut.'); // Beispiel für Fehlermeldung
     }
   };
 
