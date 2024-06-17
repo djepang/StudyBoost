@@ -65,3 +65,8 @@ footer {
   padding: 10px;
   border-top: 1px solid #08427c;
 }
+.addition-subtraktion {
+  max-width: 1200px; /* Maximale Breite des Containers */
+  margin: 0 auto; /* Zentriert den Container horizontal */
+  padding: 20px; /* Fügt Innenabstand hinzu */
+}

@@ -6,11 +6,13 @@ function Zahleneinführung() {
   return (
     <div className="zahleneinfuehrung">
       <header className="zahleneinführung-header">
-        <h1>Einführung in Zahlen und Zählen</h1>
+<h1><strong>Einführung  Zahlen und Zählen</strong></h1>
       </header>
       <main>
         <section id="introduction">
-          <h2>Einführung in Zahlen bis 20</h2>
+
+
+          <h2><strong>Einführung  Zahlen bis 20</strong></h2>
           <p>
             Zahlen sind die Grundlage der Mathematik.
           </p>
@@ -44,8 +46,9 @@ function Zahleneinführung() {
           </div>
         </section>
 
+        
         <section id="counting-images">
-          <h2>Zählen durch Bilder</h2>
+          <h2><strong>Zählen durch Bilder</strong></h2>
           <div className="image-gallery">
             <div className="image-card">
               <img src="path/to/image1.jpg" alt="Bild 1" />
@@ -60,8 +63,10 @@ function Zahleneinführung() {
         </section>
 
         <section id="number-lines">
-          <h2>Zahlenlinien</h2>
-          <p>
+
+       
+          <h2><strong>Zahlenlinien</strong></h2>
+          <p className="center-text">
             Zahlenlinien sind eine visuelle Darstellung, um die Position von Zahlen zu zeigen. Sie können verwendet werden, um Addition und Subtraktion zu veranschaulichen.
           </p>
           <p>
@@ -70,8 +75,10 @@ function Zahleneinführung() {
           </p>
         </section>
 
+
+        
         <section id="videos">
-          <h2>Lernvideos</h2>
+          <h2><strong>Lernvideos</strong></h2>
           <div className="video-container">
             <YouTube videoId="pvz5kfF6pys" />
           </div>
