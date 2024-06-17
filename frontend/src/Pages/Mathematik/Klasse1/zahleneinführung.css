@@ -59,3 +59,38 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  margin-bottom: 20px;
+}
+
+.number-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.number-item:nth-child(odd) {
+  background-color: #2b6ca5; /* helle Farbe für ungerade Elemente */
+}
+
+.number-item:nth-child(even) {
+  background-color: #47b5da; /* dunklere Farbe für gerade Elemente */
+}

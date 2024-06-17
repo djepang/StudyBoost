@@ -20,28 +20,28 @@ function Zahleneinführung() {
           <p>
             Diese grundlegenden Konzepte sind wichtig für den Einstieg in die Mathematik.
           </p>
-          <ul>
-            <li><strong>1:</strong> Eins</li>
-            <li><strong>2:</strong> Zwei</li>
-            <li><strong>3:</strong> Drei</li>
-            <li><strong>4:</strong> Vier</li>
-            <li><strong>5:</strong> Fünf</li>
-            <li><strong>6:</strong> Sechs</li>
-            <li><strong>7:</strong> Sieben</li>
-            <li><strong>8:</strong> Acht</li>
-            <li><strong>9:</strong> Neun</li>
-            <li><strong>10:</strong> Zehn</li>
-            <li><strong>11:</strong> Elf</li>
-            <li><strong>12:</strong> Zwölf</li>
-            <li><strong>13:</strong> Dreizehn</li>
-            <li><strong>14:</strong> Vierzehn</li>
-            <li><strong>15:</strong> Fünfzehn</li>
-            <li><strong>16:</strong> Sechzehn</li>
-            <li><strong>17:</strong> Siebzehn</li>
-            <li><strong>18:</strong> Achtzehn</li>
-            <li><strong>19:</strong> Neunzehn</li>
-            <li><strong>20:</strong> Zwanzig</li>
-          </ul>
+          <div className="numbers-grid">
+          <div class="number-item"><strong>1:</strong> Eins</div>
+          <div class="number-item"><strong>2:</strong> Zwei</div>
+          <div class="number-item"><strong>3:</strong> Drei</div>
+          <div class="number-item"><strong>4:</strong> Vier</div>
+          <div class="number-item"><strong>5:</strong> Fünf</div>
+          <div class="number-item"><strong>6:</strong> Sechs</div>
+          <div class="number-item"><strong>7:</strong> Sieben</div>
+          <div class="number-item"><strong>8:</strong> Acht</div>
+          <div class="number-item"><strong>9:</strong> Neun</div>
+          <div class="number-item"><strong>10:</strong> Zehn</div>
+          <div class="number-item"><strong>11:</strong> Elf</div>
+          <div class="number-item"><strong>12:</strong> Zwölf</div>
+          <div class="number-item"><strong>13:</strong> Dreizehn</div>
+          <div class="number-item"><strong>14:</strong> Vierzehn</div>
+          <div class="number-item"><strong>15:</strong> Fünfzehn</div>
+          <div class="number-item"><strong>16:</strong> Sechzehn</div>
+          <div class="number-item"><strong>17:</strong> Siebzehn</div>
+          <div class="number-item"><strong>18:</strong> Achtzehn</div>
+          <div class="number-item"><strong>19:</strong> Neunzehn</div>
+          <div class="number-item"><strong>20:</strong> Zwanzig</div>
+          </div>
         </section>
 
         <section id="counting-images">
