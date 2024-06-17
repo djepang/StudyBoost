@@ -4,10 +4,10 @@
 }
 
 .header {
-  background-color: #f8f9fa;
+  background-color: #1274d5;
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #492394;
 }
 
 .transparent-image {
@@ -21,10 +21,10 @@
 }
 
 .introduction, .task {
-  background-color: #ffffff;
+  background-color: #37d514;
   padding: 20px;
   margin: 10px 0;
-  border: 1px solid #dee2e6;
+  border: 1px solid #17bc3d;
   border-radius: 4px;
 }
 
@@ -47,9 +47,9 @@
 }
 
 .image-card {
-  background-color: #ffffff;
+  background-color: #5339e4;
   padding: 20px;
-  border: 1px solid #dee2e6;
+  border: 1px solid #2942ce;
   border-radius: 4px;
   text-align: center;
 }
@@ -60,8 +60,8 @@
 }
 
 footer {
-  background-color: #f8f9fa;
+  background-color: #1274d5;
   text-align: center;
   padding: 10px;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #08427c;
 }

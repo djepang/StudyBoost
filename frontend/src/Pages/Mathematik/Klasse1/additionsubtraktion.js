@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 import additionImage from '../../../assets/addition-image.jpg'; 
 import subtractionImage from '../../../assets/subtraction-image.jpg'; 
 import transparentImage from '../../../assets/transparent-image.png';
+import GameLink from '../../../Components/GameLink/GameLink'; 
 import './addition-subtraktion.css';
 
 const TransparentImage = ({ src }) => (
@@ -35,6 +36,7 @@ const Introduction = () => (
   </section>
 );
 
+// Komponente für den Video-Abschnitt
 const VideoSection = () => (
   <section id="video">
     <h5>Lernvideos</h5>
@@ -45,6 +47,7 @@ const VideoSection = () => (
   </section>
 );
 
+// Komponente für die Bildergalerie
 const ImageGallery = () => (
   <section id="images">
     <h5>Schöne Bilder zur Veranschaulichung</h5>
@@ -72,6 +75,7 @@ function AdditionSubtraktion() {
         <Introduction />
         <VideoSection />
         <ImageGallery />
+        <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       <footer>
         <p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
@@ -81,3 +85,4 @@ function AdditionSubtraktion() {
 }
 
 export default AdditionSubtraktion;
+
