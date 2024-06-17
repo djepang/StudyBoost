@@ -9,7 +9,6 @@ const TransparentImage = ({ src }) => (
   <img className="transparent-image" src={src} alt="Transparentes Bild" />
 );
 
-
 const Introduction = () => (
   <section id="introduction">
     <h5>Aufgaben</h5>
@@ -36,18 +35,16 @@ const Introduction = () => (
   </section>
 );
 
-// Komponente für den Video-Abschnitt
 const VideoSection = () => (
   <section id="video">
     <h5>Lernvideos</h5>
     <div className="video-container">
-      <YouTube videoId="pvz5kfF6pys" />
-      <YouTube videoId="L7kk6Lz8HS4" />
+      <YouTube videoId="QXS4exogzb0" />
+      <YouTube videoId="J0VA-WcsOtI" />
     </div>
   </section>
 );
 
-// Komponente für die Bildergalerie
 const ImageGallery = () => (
   <section id="images">
     <h5>Schöne Bilder zur Veranschaulichung</h5>
