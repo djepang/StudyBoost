@@ -15,7 +15,7 @@ const Introduction = () => (
     <h5>Aufgaben</h5>
     <div className="introduction">
       <h3>Addition</h3>
-      <ul>
+      <ul className="flex flex-row gap-5">
         <li>5 + 3 = ?</li>
         <li>7 + 2 = ?</li>
         <li>10 + 4 = ?</li>
@@ -24,8 +24,8 @@ const Introduction = () => (
       </ul>
     </div>
     <div className="task">
-      <h3>Subtraktion</h3>
-      <ul>
+      <h7>Subtraktion</h7>
+      <ul className="flex flex-row gap-5">
         <li>9 - 4 = ?</li>
         <li>10 - 3 = ?</li>
         <li>15 - 7 = ?</li>
@@ -36,10 +36,9 @@ const Introduction = () => (
   </section>
 );
 
-// Komponente für den Video-Abschnitt
 const VideoSection = () => (
   <section id="video">
-    <h5>Lernvideos</h5>
+    <h8>Lernvideos</h8>
     <div className="video-container">
       <YouTube videoId="QXS4exogzb0" />
       <YouTube videoId="J0VA-WcsOtI" />
@@ -68,7 +67,7 @@ function AdditionSubtraktion() {
   return (
     <div className="addition-subtraktion">
       <header className="header">
-        <h1>Übungen zu Addition und Subtraktion</h1>
+      <h2><span class="badge text-bg-secondary">Übungen zu Addition und Subtraktion</span></h2>
       </header>
       <main>
         <TransparentImage src={transparentImage} />
@@ -78,7 +77,7 @@ function AdditionSubtraktion() {
         <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       <footer>
-        <p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
+      <h2><span class="badge text-bg-secondary"><p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p></span></h2>
       </footer>
     </div>
   );

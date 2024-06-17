@@ -1,19 +1,19 @@
 .addition-subtraktion {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding: 15px;
 }
 
 .header {
   background-color: #1274d5;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   border-bottom: 1px solid #492394;
 }
 
 .transparent-image {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1;
+  left: 1;
   width: 100%;
   height: auto;
   opacity: 0.1;
@@ -22,8 +22,8 @@
 
 .introduction, .task {
   background-color: #37d514;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 15px;
+  margin: 5px 0;
   border: 1px solid #17bc3d;
   border-radius: 4px;
 }
@@ -36,21 +36,21 @@
 }
 
 .video-container > div {
-  flex: 1 1 300px;
+  flex: 1 1 250px;
 }
 
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
 
 .image-card {
   background-color: #5339e4;
-  padding: 20px;
+  padding: 40px;
   border: 1px solid #2942ce;
-  border-radius: 4px;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -63,5 +63,5 @@ footer {
   background-color: #1274d5;
   text-align: center;
   padding: 10px;
-  border-top: 1px solid #08427c;
+  border-top: 2px solid #08427c;
 }
