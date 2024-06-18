@@ -9,7 +9,8 @@ function GameLink() {
         target="_blank"
         rel="noopener noreferrer"
       ><strong>
-        Spiel im Google Play Store herunterladen
+         Bitte Spiel im   Google Play Store herunterladen
+         
         </strong></a>
     </div>
   );
