@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import YouTube from 'react-youtube';
 import additionImage from '../../../assets/addition-image.jpg'; 
 import subtractionImage from '../../../assets/subtraction-image.jpg'; 
@@ -11,9 +12,13 @@ const TransparentImage = ({ src }) => (
   <img className="transparent-image" src={src} alt="Transparentes Bild" />
 );
 
+TransparentImage.propTypes = {
+  src: PropTypes.string.isRequired,
+};
+
 const VideoSection = () => (
   <section id="video">
-    <h8><strong>Lernvideos</strong></h8>
+    <h2><strong>Lernvideos</strong></h2>
     <div className="video-container">
       <YouTube videoId="QXS4exogzb0" />
       <YouTube videoId="J0VA-WcsOtI" />
@@ -23,7 +28,7 @@ const VideoSection = () => (
 
 const ImageGallery = () => (
   <section id="images">
-    <h5><strong>Schöne Bilder zur Veranschaulichung</strong></h5>
+    <h2><strong>Schöne Bilder zur Veranschaulichung</strong></h2>
     <div className="image-gallery">
       <div className="image-card">
         <img src={additionImage} alt="Addition" />
@@ -41,7 +46,7 @@ function AdditionSubtraktion() {
   return (
     <div className="addition-subtraktion">
       <header className="header">
-      <h2><span class="badge text-bg-secondary"><strong>Übungen zur Addition und Subtraktion</strong></span></h2>
+        <h2><span className="badge text-bg-secondary"><strong>Übungen zur Addition und Subtraktion</strong></span></h2>
       </header>
       <main>
         <TransparentImage src={transparentImage} />
@@ -51,11 +56,10 @@ function AdditionSubtraktion() {
         <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       <footer>
-      <h2><span class="badge text-bg-secondary"><p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p></span></h2>
+        <h2><span className="badge text-bg-secondary"><p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p></span></h2>
       </footer>
     </div>
   );
 }
 
 export default AdditionSubtraktion;
-

@@ -6,7 +6,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
-    max-width: 400px;
+    max-width: 800px;
   }
   
   .google-play-button {
@@ -27,8 +27,8 @@
   
   .google-play-logo {
     width: 300px; 
-    height: auto;
-    margin-right: 5px;
+    height: min-content;
+    margin-right: 3px;
   }
   
   .google-play-button:hover {

@@ -12,9 +12,7 @@ function GameLink() {
       <h2><strong>Mathematik-Spiel für Kinder</strong></h2>
       <button 
         onClick={handleClick}
-        className="google-play-button"
-      >
-        <img src={googlePlayLogo} alt="Google Play Logo" className="google-play-logo" /></button>
+        className="google-play-button"><img src={googlePlayLogo} alt="Google Play Logo" className="google-play-logo" /></button>
         <span><strong>Bitte spiel im Google Play Store herunterladen. Danke!</strong></span>
       
     </div>
