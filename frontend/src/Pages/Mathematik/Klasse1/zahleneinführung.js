@@ -48,15 +48,26 @@ function Zahleneinführung() {
 
         
         <section id="counting-images">
-          <h2><strong>Zählen durch Bilder</strong></h2>
+          
           <div className="image-gallery">
             <div className="image-card">
-              <img src="path/to/image1.jpg" alt="Bild 1" />
-              <p>Beschreibung oder Erklärung des ersten Bildes</p>
+              
+              <h2><strong>Was ist Addition?</strong></h2>
+            <p>
+                Die Addition ist die mathematische Operation, bei der zwei oder mehr Zahlen (Addenden) zusammengezählt werden, um eine Summe zu bilden.
+                Das Symbol für Addition ist das Pluszeichen (+).
+                Zum Beispiel: 4 + 5 = 9. Hier sind 4 und 5 die Addenden, und 9 ist die Summe.
+            </p>
+
             </div>
             <div className="image-card">
-              <img src="path/to/image2.jpg" alt="Bild 2" />
-              <p>Beschreibung oder Erklärung des zweiten Bildes</p>
+            <h2><strong>Was ist Subtraktion?</strong></h2>
+            <p>
+                Die Subtraktion ist die mathematische Operation, bei der eine Zahl (der Subtrahend) von einer anderen Zahl (dem Minuend) abgezogen wird, um die Differenz zu erhalten.
+                Das Symbol für Subtraktion ist das Minuszeichen (−).
+                Zum Beispiel: 9 − 5 = 4. Hier ist 9 der Minuend, 5 der Subtrahend, und 4 ist die Differenz.
+            </p>
+
             </div>
             {/* Weitere Bilder können nach Bedarf hinzugefügt werden */}
           </div>
@@ -75,8 +86,7 @@ function Zahleneinführung() {
           </p>
         </section>
 
-
-        
+       
         <section id="videos">
           <h2><strong>Lernvideos</strong></h2>
           <div className="video-container">
