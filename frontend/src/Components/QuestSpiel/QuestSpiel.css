@@ -1,92 +1,94 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #bc39d0;
+  margin: 0;
+  padding: 0;
+}
+
 .game-container {
-  background-color: #8c2bb9;
-  border: 2px solid #6c10ae;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #edf508;
   border-radius: 10px;
-  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 20px;
 }
 
-.game-container h2 {
-  color: #131212;
-  font-size: 2em; 
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.game-container p {
-  font-size: 1.5em; 
+p {
+  font-size: 1.5rem;
+  color: #555;
 }
 
-.question-text {
-  font-size: 2em; 
-}
-
-.feedback-text {
-  font-size: 1.5em; 
-}
-
-.game-container img {
-  width: 100px;
-  height: auto;
-  margin: 20px 0;
-}
-
-.game-container input {
+input[type="number"] {
+  font-size: 1.5rem;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0;
   border-radius: 5px;
-  border: 1px solid #b6ee27;
-  font-size: 1.5em; 
+  border: 2px solid #ccc;
+  width: 100px;
+  text-align: center;
 }
 
-.game-container button {
+.answer-button {
+  font-size: 1.5rem;
   padding: 10px 20px;
-  background-color: #28a745;
-  color: #d7f20c;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
   cursor: pointer;
-  font-size: 1.2em; 
 }
 
-.game-container button:hover {
-  background-color: #218838;
+.answer-button:hover {
+  background-color: #45a049;
 }
 
-.navigation-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+.feedback {
+  font-size: 1.5rem;
+  color: #ff5722;
   margin-top: 10px;
 }
 
-.navigation-buttons button {
-  background-color: #007bff;
-  color: white;
+.navigation-buttons {
+  margin-top: 20px;
+}
+
+.nav-button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 5px;
   border: none;
-  padding: 10px;
   border-radius: 5px;
+  background-color: #3f51b5;
+  color: white;
   cursor: pointer;
 }
 
-.navigation-buttons button:disabled {
-  background-color: #6c757d;
+.nav-button:hover {
+  background-color: #303f9f;
 }
 
 .progress-bar {
-  width: 100%;
-  background-color: #d0e055;
+  background-color: #eee;
   border-radius: 5px;
+  overflow: hidden;
   margin-top: 20px;
 }
 
 .progress {
   height: 20px;
-  background-color: #34bc3b;
-  border-radius: 5px;
+  background-color: #4caf50;
 }
 
 .emoji-container {
+  font-size: 2rem;
   margin-top: 20px;
-  font-size: 2.5em; 
-  color: #28a745;
 }

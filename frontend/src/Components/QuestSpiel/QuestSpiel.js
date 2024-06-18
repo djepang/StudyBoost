@@ -25,8 +25,6 @@ const QuestSpiel = () => {
     setUserAnswer('');
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setCurrentQuestion(currentQuestion + 1);
     }
   };
 
@@ -78,13 +76,14 @@ const QuestSpiel = () => {
           value={userAnswer}
           onChange={(e) => setUserAnswer(e.target.value)}
           required
+          className="input-field"
         />
-        <button type="submit">Antworten</button>
+        <button type="submit" className="answer-button">Antworten</button>
       </form>
-      <p>{feedback}</p>
+      <p className="feedback">{feedback}</p>
       <div className="navigation-buttons">
-        <button onClick={handlePrev} disabled={currentQuestion === 0}>Zurück</button>
-        <button onClick={handleNext} disabled={userAnswer === ''}>Weiter</button>
+        <button onClick={handlePrev} disabled={currentQuestion === 0} className="nav-button">Zurück</button>
+        <button onClick={handleNext} disabled={userAnswer === ''} className="nav-button">Weiter</button>
       </div>
       <div className="progress-bar">
         <div className="progress" style={{ width: `${progress}%` }}></div>

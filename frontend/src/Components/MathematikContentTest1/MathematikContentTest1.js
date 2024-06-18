@@ -54,9 +54,9 @@ const MathematikContentTest1 = () => {
                             </Link>
                         </li>
                         <li>
-                            <a href="#shapes-patterns" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
+                            <Link to="/Mathematik/Klasse1formenmuster" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
                                 Formen und Muster
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

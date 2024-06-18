@@ -48,7 +48,6 @@ function AdditionSubtraktion() {
         <ImageGallery />
         <QuestSpiel /> {/* Fügen Sie die QuestSpiel-Komponente hier ein */}
         <VideoSection />
-        
         <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       <footer>

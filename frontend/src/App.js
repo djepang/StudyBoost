@@ -15,7 +15,7 @@ import MathematikContentTest1 from './Components/MathematikContentTest1/Mathemat
 import Klasse1Test from './Pages/Mathematik/Klasse1/Test';
 import Klasse1zahleneinführung from './Pages/Mathematik/Klasse1/zahleneinführung';
 import Klasse1additionsubtraktion from './Pages/Mathematik/Klasse1/additionsubtraktion';
-
+import Klasse1formenmuster from './Pages/Mathematik/Klasse1/formenmuster';
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
         <Route path="/Mathematik/Klasse1Test" element={<Klasse1Test />} />
         <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
         <Route path="/Mathematik/Klasse1additionsubtraktion" element={<Klasse1additionsubtraktion />} />
+        <Route path="/Mathematik/Klasse1formenmuster" element={<Klasse1formenmuster />} />
         <Route path="/MathematikContent" element={<MathematikContent />} />
         <Route path="/MathematikContentTest1" element={<MathematikContentTest1 />} />
         <Route path='*' element={<Error />} />
