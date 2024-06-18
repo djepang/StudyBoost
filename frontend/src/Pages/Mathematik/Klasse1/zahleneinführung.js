@@ -23,6 +23,7 @@ function Zahleneinführung() {
             Diese grundlegenden Konzepte sind wichtig für den Einstieg in die Mathematik.
           </p>
           <div className="numbers-grid">
+
           <div class="number-item"><strong>1:</strong> Eins</div>
           <div class="number-item"><strong>2:</strong> Zwei</div>
           <div class="number-item"><strong>3:</strong> Drei</div>
@@ -45,7 +46,18 @@ function Zahleneinführung() {
           <div class="number-item"><strong>20:</strong> Zwanzig</div>
           </div>
         </section>
+        <section id="number-lines">
 
+       
+<h2><strong>Zahlenlinien</strong></h2>
+<p className="center-text">
+  Zahlenlinien sind eine visuelle Darstellung, um die Position von Zahlen zu zeigen. Sie können verwendet werden, um Addition und Subtraktion zu veranschaulichen.
+</p>
+<p>
+  Zum Beispiel:
+  <strong>0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20</strong>
+</p>
+</section>
         
         <section id="counting-images">
           
@@ -73,18 +85,7 @@ function Zahleneinführung() {
           </div>
         </section>
 
-        <section id="number-lines">
-
-       
-          <h2><strong>Zahlenlinien</strong></h2>
-          <p className="center-text">
-            Zahlenlinien sind eine visuelle Darstellung, um die Position von Zahlen zu zeigen. Sie können verwendet werden, um Addition und Subtraktion zu veranschaulichen.
-          </p>
-          <p>
-            Zum Beispiel:
-            <strong>0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11 - 12 - 13 - 14 - 15 - 16 - 17 - 18 - 19 - 20</strong>
-          </p>
-        </section>
+   
 
        
         <section id="videos">
