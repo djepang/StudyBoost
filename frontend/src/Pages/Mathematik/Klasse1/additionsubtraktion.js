@@ -41,13 +41,14 @@ function AdditionSubtraktion() {
   return (
     <div className="addition-subtraktion">
       <header className="header">
-      <h2><span class="badge text-bg-secondary"><strong>Übungen zu Addition und Subtraktion</strong></span></h2>
+      <h2><span class="badge text-bg-secondary"><strong>Übungen zur Addition und Subtraktion</strong></span></h2>
       </header>
       <main>
         <TransparentImage src={transparentImage} />
+        <ImageGallery />
         <QuestSpiel /> {/* Fügen Sie die QuestSpiel-Komponente hier ein */}
         <VideoSection />
-        <ImageGallery />
+        
         <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       <footer>
