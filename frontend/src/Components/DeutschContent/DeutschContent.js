@@ -36,8 +36,8 @@ class DeutschContent extends React.Component {
                 <nav className="w-full mt-8 bg-white bg-opacity-75">
                     <ul className="flex flex-wrap justify-center gap-8">
                         <li>
-                            <Link to="/Deutsch/Klasse1Test" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={DeutschImage} alt="Klasse1Test" className="h-10 w-10 mr-2 rounded-full object-cover" />
+                            <Link to="/Deutsch/Klasse1deutsch" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                                <img src={DeutschImage} alt="Klasse1deutsch" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 1 
                             </Link>
                         </li>
