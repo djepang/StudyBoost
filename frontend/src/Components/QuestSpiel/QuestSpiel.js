@@ -9,8 +9,8 @@ const questions = [
   { question: 'Wie viele Kirschen sind 🍒🍒🍒🍒🍒🍒🍒🍒 + 🍒🍒🍒🍒🍒?', answer: 15, type: 'addition', emoji: '🍒' },
   { question: 'Wie viele Katzen sind 🐱🐱🐱🐱🐱🐱🐱🐱🐱 - 🐱🐱🐱🐱?', answer: 5, type: 'subtraction', emoji: '🐱' },
   { question: 'Wie viele Hunde sind 🐶🐶🐶🐶🐶🐶🐶🐶🐶🐶 - 🐶🐶🐶?', answer: 7, type: 'subtraction', emoji: '🐶' },
-  { question: 'Wie viele Elefanten sind 🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘 - 🐘🐘🐘🐘🐘🐘🐘🐘?', answer: 8, type: 'subtraction', emoji: '🐘' },
-  { question: 'Wie viele Giraffen sind 🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒 - 🦒🦒🦒🦒🦒🦒🦒?', answer: 7, type: 'subtraction', emoji: '🦒' },
+  { question: 'Wie viele Elefanten sind 🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘 - 🐘🐘🐘🐘🐘🐘🐘🐘?', answer: 7, type: 'subtraction', emoji: '🐘' },
+  { question: 'Wie viele Giraffen sind 🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒🦒 - 🦒🦒🦒🦒🦒🦒🦒?', answer: 5, type: 'subtraction', emoji: '🦒' },
   { question: 'Wie viele Löwen sind 🦁🦁🦁🦁🦁🦁🦁🦁 - 🦁🦁?', answer: 6, type: 'subtraction', emoji: '🦁' }
 ];
 
@@ -24,8 +24,11 @@ const QuestSpiel = () => {
     setFeedback('');
     setUserAnswer('');
     if (currentQuestion < questions.length - 1) {
-      setCurrentQuestion(currentQuestion + 1);
-    }
+    setCurrentQuestion(currentQuestion + 1);
+    } 
+    else {
+  setCurrentQuestion(currentQuestion + 1);
+   }
   };
 
   const handlePrev = () => {
@@ -76,14 +79,13 @@ const QuestSpiel = () => {
           value={userAnswer}
           onChange={(e) => setUserAnswer(e.target.value)}
           required
-          className="input-field"
         />
-        <button type="submit" className="answer-button">Antworten</button>
+        <button className="answer-button" type="submit">Antworten</button>
       </form>
       <p className="feedback">{feedback}</p>
       <div className="navigation-buttons">
-        <button onClick={handlePrev} disabled={currentQuestion === 0} className="nav-button">Zurück</button>
-        <button onClick={handleNext} disabled={userAnswer === ''} className="nav-button">Weiter</button>
+        <button className="nav-button" onClick={handlePrev} disabled={currentQuestion === 0}>Zurück</button>
+        <button className="nav-button" onClick={handleNext} disabled={userAnswer === ''}>Weiter</button>
       </div>
       <div className="progress-bar">
         <div className="progress" style={{ width: `${progress}%` }}></div>
