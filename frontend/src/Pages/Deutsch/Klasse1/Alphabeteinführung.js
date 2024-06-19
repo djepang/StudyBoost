@@ -1,6 +1,8 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import './Alphabeteinführung.css';
+import appleImage from '../../../assets/apple-image.png';
+import ballImage from '../../../assets/ball-image.png';
 
 function Alphabeteinführung() {
   return (
@@ -63,12 +65,12 @@ function Alphabeteinführung() {
             <div className="image-card">
               <h2>📖 <strong>Der Buchstabe A</strong> 📖</h2>
               <p>A wie Apfel. Ein Apfel ist ein Beispiel für etwas, das mit dem Buchstaben A beginnt.</p>
-              <img src="https://via.placeholder.com/100" alt="Apfel" />
+              <img src={appleImage} alt="Apfel" />
             </div>
             <div className="image-card">
               <h2>📖 <strong>Der Buchstabe B</strong> 📖</h2>
               <p>B wie Ball. Ein Ball ist ein Beispiel für etwas, das mit dem Buchstaben B beginnt.</p>
-              <img src="https://via.placeholder.com/100" alt="Ball" />
+              <img src={ballImage} alt="Ball" />
             </div>
             {/* Weitere Buchstabenbilder können hier hinzugefügt werden */}
           </div>
