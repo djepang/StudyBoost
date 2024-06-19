@@ -1,18 +1,73 @@
+<<<<<<< HEAD
 /* Alphabeteinführung.css */
 
 /* Allgemeine Stile */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+=======
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+>>>>>>> 0cffbf42fa1c927b41867ed4a456f220df29fa44
   margin: 0;
   padding: 0;
 }
 
 .Alphabeteinführung {
+<<<<<<< HEAD
+=======
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f90fd6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Alphabeteinführung-header {
+  background-color: #4caf50;
+  color: rgb(41, 30, 30);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.Alphabeteinführung-header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+#introduction, #alphabet-songs, #letter-recognition-images, #videos {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4caf50;
+}
+
+.alphabet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.alphabet-item {
+  background-color: #f1f8e9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80px;
+>>>>>>> 0cffbf42fa1c927b41867ed4a456f220df29fa44
   text-align: center;
   padding: 20px;
 }
 
+<<<<<<< HEAD
 /* Header */
 .Alphabeteinführung-header {
   background-color: #4CAF50;
@@ -35,6 +90,13 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
   justify-items: center;
+=======
+#alphabet-songs .video-container, #videos .video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+>>>>>>> 0cffbf42fa1c927b41867ed4a456f220df29fa44
 }
 
 .alphabet-item {
@@ -59,6 +121,7 @@ main {
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: center;
   gap: 20px;
 }
@@ -79,6 +142,24 @@ main {
 
 .image-card p {
   margin: 10px 0;
+=======
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-card {
+  background-color: #f60fea;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 120px;
+}
+
+.image-card img {
+  max-width: 100%;
+  border-radius: 5px;
+>>>>>>> 0cffbf42fa1c927b41867ed4a456f220df29fa44
 }
 
 /* Abschnitt: Lernvideos */
@@ -93,6 +174,7 @@ main {
 
 /* Footer */
 footer {
+<<<<<<< HEAD
   background-color: #4CAF50;
   color: white;
   padding: 10px 0;
@@ -104,3 +186,11 @@ footer {
 footer p {
   margin: 0;
 }
+=======
+  text-align: center;
+  padding: 10px;
+  background-color: #19381a;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+>>>>>>> 0cffbf42fa1c927b41867ed4a456f220df29fa44
