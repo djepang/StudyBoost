@@ -66,18 +66,24 @@ function Zahleneinführung() {
             <div className="image-card">
               <h2><strong>Was ist Addition? ⭐️</strong></h2>
               <p>
-                Die Addition ist die mathematische Operation, bei der zwei oder mehr Zahlen (Addenden) zusammengezählt werden, um eine Summe zu bilden.
-                Das Symbol für Addition ist das Pluszeichen (+).
-                Zum Beispiel: 4 + 5 = 9. Hier sind 4 und 5 die Addenden, und 9 ist die Summe.
-              </p>
+               Das Pluszeichen <strong>(+)</strong> ist das Symbol für die Addition.
+               Bei der Addition addiert man zwei oder mehr Zahlen, um eine Summe zu bilden.
+                
+                Zum Beispiel: 4 + 5 = 9. </p>  
+                
+                <p>9 ist die Summe.</p>
+              <p>Zum Beispiel⭐️+⭐️+⭐️+⭐️+⭐️+⭐️+⭐️+⭐️+⭐️=⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️ wir haben ingesamt 9 Sterne</p>
             </div>
             <div className="image-card">
               <h2><strong>Was ist Subtraktion? 🌟</strong></h2>
               <p>
-                Die Subtraktion ist die mathematische Operation, bei der eine Zahl (der Subtrahend) von einer anderen Zahl (dem Minuend) abgezogen wird, um die Differenz zu erhalten.
-                Das Symbol für Subtraktion ist das Minuszeichen (−).
-                Zum Beispiel: 9 − 5 = 4. Hier ist 9 der Minuend, 5 der Subtrahend, und 4 ist die Differenz.
-              </p>
+              Das Minuszeichen <strong>(-)</strong> ist das Symbol für die Subtraktion.
+                Bei der Subtraktion zieht  man eine Zahl von einer anderen Zahl ab , um die Differenz zu erhalten.
+                Zum Beispiel: 9 - 5 = 4.</p>
+                <p>4 ist die Differenz.</p>
+                
+                <p> Zum Beispiel:🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟-🌟🌟🌟🌟🌟🌟=🌟🌟🌟 hier bleibt 3 Sterne</p>
+         
             </div>
           </div>
         </section>
