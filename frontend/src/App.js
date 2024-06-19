@@ -18,6 +18,7 @@ import Klasse1Test from './Pages/Mathematik/Klasse1/Test';
 import Klasse1deutsch from './Pages/Deutsch/Klasse1/deutsch';
 import Klasse1zahleneinführung from './Pages/Mathematik/Klasse1/zahleneinführung';
 import Klasse1Alphabeteinführung from './Pages/Deutsch/Klasse1/Alphabeteinführung';
+import Klasse1GeschichtenMaerchen from './Pages/Deutsch/Klasse1/GeschichtenMaerchen'
 import Klasse1additionsubtraktion from './Pages/Mathematik/Klasse1/additionsubtraktion';
 import Klasse1formenmuster from './Pages/Mathematik/Klasse1/formenmuster';
 import Deutsch from './Pages/Deutsch/Deutsch';
@@ -38,6 +39,7 @@ function App() {
         <Route path="/Mathematik/Klasse1Test" element={<Klasse1Test />} />
         <Route path="/Deutsch/Klasse1deutsch" element={<Klasse1deutsch />} />
         <Route path="/Deutsch/Klasse1Alphabeteinführung" element={<Klasse1Alphabeteinführung />} />
+        <Route path="/Deutsch/Klasse1GeschichtenMaerchen" element={<Klasse1GeschichtenMaerchen />} />
         <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
         <Route path="/Mathematik/Klasse1additionsubtraktion" element={<Klasse1additionsubtraktion />} />
         <Route path="/Mathematik/Klasse1formenmuster" element={<Klasse1formenmuster />} />
