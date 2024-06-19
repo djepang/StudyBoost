@@ -5,7 +5,8 @@ import './formenmuster.css';
 const Fragen = [
   { frage: "Welche Form fehlt: 🔵🟥🔵🟥?", antworten: ["🔵", "🟥", "🔺"], richtigeAntwort: "🔵" },
   { frage: "Welche Form fehlt: 🟥🔵🟥🔵?", antworten: ["🔵", "🟥", "🔺"], richtigeAntwort: "🟥" },
-  // Weitere Fragen können hier hinzugefügt werden
+  { frage: "Welche Form fehlt: 🔺🟥🔺🟥?", antworten: ["🔵", "🟥", "🔺"], richtigeAntwort: "🔺" },
+  { frage: "Welche Form fehlt: 🔵🔺🔵🔺?", antworten: ["🔵", "🟥", "🔺"], richtigeAntwort: "🔵" },
 ];
 
 const FormenMuster = () => {
