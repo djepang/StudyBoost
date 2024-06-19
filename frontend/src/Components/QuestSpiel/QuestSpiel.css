@@ -17,13 +17,13 @@ body {
 
 h2 {
   font-size: 3rem; /* Larger font size */
-  color: #121111;
+  color: #2a2525;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 2rem; /* Larger font size */
-  color: #0d0d0d;
+  color: #f7f1f1;
 }
 
 input[type="number"] {
