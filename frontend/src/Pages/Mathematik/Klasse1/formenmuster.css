@@ -13,7 +13,7 @@ body {
 
 .header {
   background-color: #ff6347;
-  color: white;
+  color: rgb(25, 25, 30);
   padding: 20px;
   text-align: center;
   border-radius: 8px;
@@ -32,11 +32,11 @@ body {
 }
 
 .shapes, .patterns, .exercise {
-  background-color: #d848c2;
+  background-color: #ce22b5;
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
-  color: white;
+  color: rgb(49, 44, 44);
   font-size: 1.5rem; /* Große Schriftart */
 }
 
@@ -59,8 +59,8 @@ body {
 }
 
 .pattern-board {
-  background-color: #fff;
-  border: 2px dashed #ccc;
+  background-color: hsl(90, 76%, 50%);
+  border: 2px dashed #e5238e;
   border-radius: 8px;
   padding: 20px;
   min-height: 200px;
@@ -110,7 +110,7 @@ footer {
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
-  color: white;
+  color: rgb(39, 35, 35);
   font-size: 1.5rem; /* Große Schriftart */
 }
 
