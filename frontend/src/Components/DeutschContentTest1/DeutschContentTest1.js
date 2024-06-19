@@ -53,7 +53,7 @@ const DeutschContentTest1 = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Deutsch/Klasse1WoerterSaetze" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
+                            <Link to="/Deutsch/Klasse1Woertersaetze" className="flex items-center bg-purple-600 p-3 rounded-lg text-white shadow-md hover:bg-purple-700 transition">
                                 Wörter und Sätze
                             </Link>
                         </li>
