@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-  background-color: #ff6347;
+  background-color: #4747ff;
   color: rgb(25, 25, 30);
   padding: 20px;
   text-align: center;
@@ -24,7 +24,7 @@ body {
 }
 
 .introduction {
-  background-color: #ffeb3b; 
+  background-color: #147ee8; 
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
@@ -32,7 +32,7 @@ body {
 }
 
 .shapes, .patterns, .exercise {
-  background-color: #ce22b5;
+  background-color: #05de51;
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;
@@ -59,8 +59,8 @@ body {
 }
 
 .pattern-board {
-  background-color: hsl(90, 76%, 50%);
-  border: 2px dashed #e5238e;
+  background-color: hsl(227, 83%, 47%);
+  border: 2px dashed #756bc9;
   border-radius: 8px;
   padding: 20px;
   min-height: 200px;
