@@ -39,6 +39,7 @@ function App() {
         <Route path='/Deutsch' element={<Deutsch />} />
         <Route path="/Mathematik/Klasse1Test" element={<Klasse1Test />} />
         <Route path="/Deutsch/Klasse1deutsch" element={<Klasse1deutsch />} />
+        <Route path="/Deutsch/Klasse1Woertersaetze" element={<Klasse1Woertersaetze />} />
         <Route path="/Deutsch/Klasse1Alphabeteinführung" element={<Klasse1Alphabeteinführung />} />
         <Route path="/Deutsch/Klasse1GeschichtenMaerchen" element={<Klasse1GeschichtenMaerchen />} />
         <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DeutschImage from '../../assets/deutsch-image.jpg'; // Ersetze den Bildpfad durch ein passendes Bild für Deutsch
+import DeutschImage from '../../assets/deutsch-image.jpg'; //
 
 class DeutschContent extends React.Component {
     render() {
