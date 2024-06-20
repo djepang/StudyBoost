@@ -79,10 +79,10 @@ function Märchen() {
           </div>
         </section>
         <section className="video-section">
-          <h2>🎥 Videos 🎥</h2>
+          <h2>🎥 Lernvideos 🎥</h2>
           <div className="video-container">
-          <YouTube videoId="0Ah4y8gCA-Q" />
-          <YouTube videoId="mGvd6yRgkXw" />
+            <YouTube videoId="0Ah4y8gCA-Q" />
+            <YouTube videoId="mGvd6yRgkXw" />
           </div>
         </section>
         <section className="audio-section">
@@ -91,21 +91,18 @@ function Märchen() {
             <div className="audio">
               <h3>Pumuckl und der Geburtstag 🎉</h3>
               <audio ref={audioRef} src={pumucklAudio} className="hidden"></audio>
-              
-              </div>
-          </div>
-        </section>
-        <div className="music-control">
-          <button onClick={togglePlay}>
-            {playing ? '⏸️ Musik stoppen' : '▶️ Musik spielen'}
-          </button>
-        </div>
-        <div className="progress-bar-container">
+              <button className="play-button" onClick={togglePlay}>
+                {playing ? '⏸️ Pause' : '▶️ Abspielen'}
+              </button>
+              <div className="progress-bar-container">
                 <div className="progress-bar" style={{ width: `${progress}%` }}></div>
               </div>
               <div className="time-display">
                 <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
               </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         <p>© 2024 Märchenwelt. Alle Rechte vorbehalten.</p>
