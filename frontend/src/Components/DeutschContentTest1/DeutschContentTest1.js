@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
 import DeutschersteklasseImage from '../../assets/Deutschersteklasse-image.jpg';
 
 const DeutschContentTest1 = () => {
@@ -17,6 +18,8 @@ const DeutschContentTest1 = () => {
         <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
       </nav>
             <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
+            <Header />
+
                 <h1 className="text-4xl font-bold text-center text-purple-900 mb-8">
                     Deutschthemen für die erste Klasse
                 </h1>
@@ -42,6 +45,7 @@ const DeutschContentTest1 = () => {
                             Erkunden von Geschichten und Märchen für Kinder.
                         </p>
                     </div>
+                    
                 </div>
 
             
@@ -66,7 +70,9 @@ const DeutschContentTest1 = () => {
                         </li>
                     </ul>
                 </nav>
+                <Footer />
             </div>
+           
         </div>
     );
 }
