@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import YouTube from 'react-youtube';
 import './formenmuster.css';
+import { Link } from 'react-router-dom';
+
 
 const Fragen = [
   { frage: "Welche Form fehlt: 🔵🟥🔵🟥?", antworten: ["🔵", "🟥", "🔺"], richtigeAntwort: "🔵" },
@@ -29,10 +31,14 @@ const FormenMuster = () => {
 
   return (
     <div className="formen-muster-container">
-      <header className="header">
+      
+      <nav>
+          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        </nav>
+
+        <header className="header">
         <h1>Formen und Muster Lernen</h1>
       </header>
-
       <section className="introduction">
         <p>Willkommen zu unserem Lernspiel! Hier kannst du Formen und Muster entdecken und üben.</p>
       </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import './zahleneinführung.css';
-
+import { Link } from 'react-router-dom';
 function Zahleneinführung() {
   return (
     <div className="zahleneinfuehrung">
@@ -9,7 +9,9 @@ function Zahleneinführung() {
       <header className="zahleneinführung-header">
         <h1><strong>Einführung Zahlen und Zählen</strong></h1>
       </header>
-
+      <nav>
+          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        </nav>
       {/* Hauptinhalt */}
       <main>
         {/* Abschnitt: Einführung Zahlen bis 20 */}

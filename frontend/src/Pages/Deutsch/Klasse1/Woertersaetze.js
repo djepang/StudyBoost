@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 import './Woertersaetze.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
+import { Link } from 'react-router-dom';
 
 function Woertersaetze() {
   return (
@@ -11,6 +12,10 @@ function Woertersaetze() {
       <header className="Woertersaetze-header">
         <h1>📚 <strong>Einführung in Wörter und Sätze</strong> 📚</h1>
       </header>
+      <nav>
+          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        </nav>
+
 
       {/* Hauptinhalt */}
       <main>

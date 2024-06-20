@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import './GeschichtenMaerchen.css';
 import pumucklAudio from '../../../assets/pumuckl-und-der-geburtstag.mp3';
+import { Link } from 'react-router-dom';
+
 
 function Märchen() {
   const audioRef = useRef(null);
@@ -59,6 +61,10 @@ function Märchen() {
       <header>
         <h1>🌟 Geschichten und Märchen 🌟</h1>
       </header>
+      <nav>
+          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        </nav>
+
       <main>
         <div className="quote">
           <p>"Ein Buch ist ein Traum, den du in deinen Händen hältst." - Neil Gaiman</p>

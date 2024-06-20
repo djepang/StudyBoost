@@ -7,6 +7,7 @@ import transparentImage from '../../../assets/transparent-image.png';
 import QuestSpiel from '../../../Components/QuestSpiel/QuestSpiel';
 import GameLink from '../../../Components/GameLink/GameLink'; 
 import './addition-subtraktion.css';
+import { Link } from 'react-router-dom';
 
 const TransparentImage = ({ src }) => (
   <img className="transparent-image" src={src} alt="Transparentes Bild" />
@@ -16,8 +17,10 @@ TransparentImage.propTypes = {
   src: PropTypes.string.isRequired,
 };
 
+
 const VideoSection = () => (
   <section id="video">
+
     <h2><strong>Lernvideos</strong></h2>
     <div className="video-container">
       <YouTube videoId="QXS4exogzb0" />
@@ -28,7 +31,11 @@ const VideoSection = () => (
 
 const ImageGallery = () => (
   <section id="images">
+       
+
     <h2><strong>Schöne Bilder zur Veranschaulichung</strong></h2>
+
+
     <div className="image-gallery">
       <div className="image-card">
         <img src={additionImage} alt="Addition" />
@@ -45,9 +52,16 @@ const ImageGallery = () => (
 function AdditionSubtraktion() {
   return (
     <div className="addition-subtraktion">
+      
+      <nav>
+          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        </nav>
       <header className="header">
+      
+
         <h2><span className="badge text-bg-secondary"><strong>Übungen zur Addition und Subtraktion</strong></span></h2>
       </header>
+
       <main>
         <TransparentImage src={transparentImage} />
         <ImageGallery />
