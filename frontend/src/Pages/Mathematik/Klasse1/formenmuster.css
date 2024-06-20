@@ -1,10 +1,3 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
 .formen-muster-container {
   max-width: 1500px;
   margin: 0 auto;
@@ -59,7 +52,7 @@ body {
 }
 
 .pattern-board {
-  background-color: hsl(227, 83%, 47%);
+  background-color: hsl(227, 71%, 49%);
   border: 2px dashed #756bc9;
   border-radius: 8px;
   padding: 20px;
@@ -67,7 +60,7 @@ body {
 }
 
 .next-button {
-  background-color: #3f51b5;
+  background-color: #071e9f;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -79,7 +72,7 @@ body {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #3f51b5;
+  background-color: #0c28c9;
   color: white;
   border-radius: 8px;
   margin-top: 20px;
@@ -106,7 +99,7 @@ footer {
 }
 
 .video-section {
-  background-color: #c8f620;
+  background-color: #20f632;
   padding: 20px;
   border-radius: 8px;
   margin: 20px 0;

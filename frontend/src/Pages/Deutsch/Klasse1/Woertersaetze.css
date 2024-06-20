@@ -5,8 +5,8 @@
 
 /* Header */
 .Woertersaetze-header {
-  background-color: #433dbf;
-  color: #21252c;
+  background-color: #3914f1;
+  color: #191a1e;
   padding: 20px 0;
   margin-bottom: 20px;
 }
@@ -27,7 +27,7 @@ main {
 
 #introduction h2 {
   font-size: 2em;
-  color: #242a25;
+  color: #161a17;
 }
 
 /* Wörtersätze Grid */
@@ -39,7 +39,7 @@ main {
 
 /* Wörtersätze Items */
 .word-item {
-  background-color: #50eb1c;
+  background-color: #1c3beb;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;

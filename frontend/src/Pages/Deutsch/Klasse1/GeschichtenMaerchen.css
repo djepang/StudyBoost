@@ -1,13 +1,13 @@
 .page-container {
   font-family: Arial, sans-serif;
-  background-color: #d025d3;
+  background-color: #1c19f4;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #edecf1;
-  color: #1750ac;
+  background-color: #00d1e4;
+  color: #1b1e24;
   padding: 20px 0;
   text-align: center;
   margin-bottom: 20px;
@@ -30,7 +30,7 @@ header h1 {
 
 .story-section h2, .video-section h2, .audio-section h2 {
   font-size: 2em;
-  color: #225319;
+  color: #1d1818;
 }
 
 .story {
@@ -68,13 +68,13 @@ header h1 {
 }
 
 .play-button:hover {
-  background-color: #e6b800;
+  background-color: #95df0c;
 }
 
 .progress-bar-container {
   width: 80%;
   height: 20px;
-  background-color: #1cf427;
+  background-color: #0de026;
   border-radius: 10px;
   overflow: hidden;
   margin: 10px auto;
@@ -83,7 +83,7 @@ header h1 {
 
 .progress-bar {
   height: 100%;
-  background-color: #4CAF50;
+  background-color: #95f419;
   transition: width 0.3s;
 }
 

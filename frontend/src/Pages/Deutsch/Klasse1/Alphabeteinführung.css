@@ -1,22 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e0f7fa;
-  margin: 0;
-  padding: 0;
-}
-
 .Alphabeteinführung {
   max-width: 1600px;
   margin: 0 auto;
   padding: 10px;
-  background-color: #f90fd6;
+  background-color: #f82c2c;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Alphabeteinführung-header {
-  background-color: #1638e3;
-  color: rgb(49, 219, 74);
+  background-color: #1410f4;
+  color: rgb(22, 21, 42);
   padding: 30px;
   text-align: center;
   border-radius: 1px 1px 0 0;
