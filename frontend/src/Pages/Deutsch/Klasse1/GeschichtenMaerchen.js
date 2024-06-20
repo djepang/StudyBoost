@@ -1,30 +1,57 @@
 import React, { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import './GeschichtenMaerchen.css';
-import bgMusic from './background-music.mp3';
+import pumucklAudio from '../../../assets/pumuckl-und-der-geburtstag.mp3';
 
 function Märchen() {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
-    if (playing) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
+    const audioElement = audioRef.current;
+
+    const playPromise = audioElement.play();
+    if (playPromise !== undefined) {
+      playPromise.then(_ => {
+        audioElement.pause();
+      }).catch(error => {
+        // Autoplay was prevented
+        console.log("Autoplay prevented: ", error);
+      });
     }
-  }, [playing]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress((prev) => (prev < 100 ? prev + 10 : 0));
-    }, 1000);
-    return () => clearInterval(interval);
+    audioElement.addEventListener('loadedmetadata', () => {
+      setDuration(audioElement.duration);
+    });
+
+    audioElement.addEventListener('timeupdate', () => {
+      setCurrentTime(audioElement.currentTime);
+      setProgress((audioElement.currentTime / audioElement.duration) * 100);
+    });
+
+    return () => {
+      audioElement.removeEventListener('loadedmetadata', () => {});
+      audioElement.removeEventListener('timeupdate', () => {});
+    };
   }, []);
 
   const togglePlay = () => {
-    setPlaying(!playing);
+    if (audioRef.current.paused) {
+      audioRef.current.play();
+      setPlaying(true);
+    } else {
+      audioRef.current.pause();
+      setPlaying(false);
+    }
+  };
+
+  const formatTime = (timeInSeconds) => {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = Math.floor(timeInSeconds % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   };
 
   return (
@@ -52,10 +79,20 @@ function Märchen() {
           </div>
         </section>
         <section className="video-section">
-          <h2>🎥 Lernvideos 🎥</h2>
+          <h2>🎥 Videos 🎥</h2>
           <div className="video-container">
-            <YouTube videoId="d4kj9zCv0O8" />
-            <YouTube videoId="4KQ5XlJ5xSo" />
+          <YouTube videoId="0Ah4y8gCA-Q" />
+          <YouTube videoId="mGvd6yRgkXw" />
+          </div>
+        </section>
+        <section className="audio-section">
+          <h2>🎧 Hörbuch "Pumuckl und der Geburtstag" 🎂</h2>
+          <div className="audio-container">
+            <div className="audio">
+              <h3>Pumuckl und der Geburtstag 🎉</h3>
+              <audio ref={audioRef} src={pumucklAudio} className="hidden"></audio>
+              
+              </div>
           </div>
         </section>
         <div className="music-control">
@@ -64,13 +101,15 @@ function Märchen() {
           </button>
         </div>
         <div className="progress-bar-container">
-          <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-        </div>
+                <div className="progress-bar" style={{ width: `${progress}%` }}></div>
+              </div>
+              <div className="time-display">
+                <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
+              </div>
       </main>
       <footer>
         <p>© 2024 Märchenwelt. Alle Rechte vorbehalten.</p>
       </footer>
-      <audio ref={audioRef} src={bgMusic} className="hidden"></audio>
     </div>
   );
 }

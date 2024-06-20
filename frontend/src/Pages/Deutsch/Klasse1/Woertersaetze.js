@@ -48,14 +48,15 @@ function Woertersaetze() {
           </div>
         </section>
 
-        {/* Abschnitt: Wörter-Songs */}
+        {/* Abschnitt: Wörter-Lieder */}
         <section id="word-songs">
           <h2>🎵 <strong>Wörter-Lieder</strong> 🎵</h2>
           <p className="center-text">Wörter-Lieder sind eine unterhaltsame und effektive Methode, um Wörter und ihre Bedeutung zu lernen. Zum Beispiel: Apfel, Ball, Katze, Hund...</p>
           <div className="video-container">
-            <YouTube videoId="IX-iENdN41Q" />
-            <YouTube videoId="_Z-JufpM5E8" />
+            <YouTube videoId="rJWZhitXWzI" />
+            <YouTube videoId="YFo1-c4peEE" />
           </div>
+          <p className="advertisement">Möchtest du noch mehr lernen? Besuche unseren <a href="https://example.com">Online-Kurs</a> für weitere spannende Themen!</p>
         </section>
 
         {/* Abschnitt: Bilder zur Worterkennung */}
@@ -79,8 +80,8 @@ function Woertersaetze() {
         <section id="videos">
           <h2>🎥 <strong>Lernvideos</strong> 🎥</h2>
           <div className="video-container">
-            <YouTube videoId="9EH1ybGHPQQ" />
-            <YouTube videoId="tb5U2ThTlh0" />
+            <YouTube videoId="l9zQackwUww" />
+            <YouTube videoId="lxwsCnrX_T8" />
           </div>
         </section>
 
