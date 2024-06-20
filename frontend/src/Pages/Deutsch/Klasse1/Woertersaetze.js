@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import Header from '../../../Components/Header/Header';
 import './Woertersaetze.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
@@ -8,7 +9,9 @@ import { Link } from 'react-router-dom';
 function Woertersaetze() {
   return (
     <div className="Woertersaetze">
-      {/* Header */}
+      <div>
+      <Header />
+    </div>
       <header className="Woertersaetze-header">
         <h1>📚 <strong>Einführung in Wörter und Sätze</strong> 📚</h1>
       </header>

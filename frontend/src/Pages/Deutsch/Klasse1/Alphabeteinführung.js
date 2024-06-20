@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import Header from '../../../Components/Header/Header';
 import './Alphabeteinführung.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
@@ -7,7 +8,9 @@ import { Link } from 'react-router-dom';
 function Alphabeteinführung() {
   return (
     <div className="Alphabeteinführung">
-      {/* Header */}
+      <div>
+      <Header />
+    </div>
       <header className="Alphabeteinführung-header">
         <h1>📚 <strong>Einführung in das Alphabet</strong> 📚</h1>
       </header>

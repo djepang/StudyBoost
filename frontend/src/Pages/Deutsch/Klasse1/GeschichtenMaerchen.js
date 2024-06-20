@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import './GeschichtenMaerchen.css';
+import Header from '../../../Components/Header/Header';
 import pumucklAudio from '../../../assets/pumuckl-und-der-geburtstag.mp3';
 import { Link } from 'react-router-dom';
 
@@ -58,9 +59,11 @@ function Märchen() {
 
   return (
     <div className="page-container">
-      <header>
-        <h1>🌟 Geschichten und Märchen 🌟</h1>
-      </header>
+       <div>
+      <Header />
+      {<h2>🌟 Geschichten und Märchen 🌟</h2>}
+    </div>
+      
       <nav>
           <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
         </nav>
