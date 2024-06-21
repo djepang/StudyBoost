@@ -7,8 +7,8 @@ const Header = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <header className="bg-gray-200 dark:bg-gray-800 p-4 flex justify-between">
-            <div className="flex justify-between w-32">
+        <header className="bg-gray-200 dark:bg-gray-800 p-4 flex justify-between items-center">
+            <div className="flex items-center space-x-2">
                 <Monitor className="text-blue-600" />
                 <span className="text-lg text-blue-600 font-bold">StudyBoost</span>
             </div>
@@ -22,11 +22,11 @@ const Header = () => {
                 </ul>
             </nav>
             <button
-        onClick={toggleTheme}
-        className="p-2 rounded-full bg-gray-300 dark:bg-gray-700"
-      >
-        {theme === 'light' ? <Sun className="text-yellow-500" /> : <Moon className="text-white" />}
-      </button>
+                onClick={toggleTheme}
+                className="p-2 rounded-full bg-gray-300 dark:bg-gray-700"
+            >
+                {theme === 'light' ? <Sun className="text-yellow-500" /> : <Moon className="text-white" />}
+            </button>
         </header>
     );
 };

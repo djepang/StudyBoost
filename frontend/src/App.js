@@ -33,7 +33,7 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 function App() {
   return (
     <ThemeProvider>
-    <div className="App">
+      <div className='App'>
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
@@ -62,8 +62,8 @@ function App() {
         <Route path="/InformatikContentTest1" element={<InformatikContentTest1 />} />
         <Route path="/DeutschContentTest1" element={<DeutschContentTest1 />} />
         <Route path="*" element={<Error />} />
-      </Routes>
-    </div>
+      </Routes> 
+      </div> 
   </ThemeProvider>
   );
 }

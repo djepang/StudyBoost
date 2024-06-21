@@ -48,6 +48,25 @@
       opacity: 1;
   }
 }
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+.header-light, .footer-light, .main-light {
+  background-color: white;
+  color: black;
+}
+
+.header-dark, .footer-dark, .main-dark {
+  background-color: black;
+  color: white;
+}
 
 
 

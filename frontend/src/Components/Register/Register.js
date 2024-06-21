@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, Button, Container, Grid, TextField, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
-import { useUserAuth } from '../../context/UserAuthContext';
-import backgroundImage from '../../assets/register-bg.jpg'; // Stellen Sie sicher, dass der Pfad korrekt ist
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
+import { useUserAuth } from '../../context/UserAuthContext'; // Stellen Sie sicher, dass der Pfad korrekt ist
 import { useNavigate } from 'react-router-dom'; // useNavigate aus react-router-dom importieren
 
 const Register = () => {
@@ -22,9 +23,11 @@ const Register = () => {
   };
 
   return (
+    <div>
+      <Header />
+    <div>
     <Box
       sx={{
-        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         minHeight: '100vh',
         display: 'flex',
@@ -83,6 +86,10 @@ const Register = () => {
         </form>
       </Container>
     </Box>
+    </div>
+    <Footer />
+  </div>
+  
   );
 };
 
