@@ -14,6 +14,15 @@ const InformatikContent = () => {
         color: '#333',
       }}
     >
+       <div className="relative overflow-hidden w-full h-16 bg-white bg-opacity-75">
+    <h1 className="text-4xl font-bold text-center text-black animate-marquee whitespace-nowrap">
+        <span style={{ color: "blue" }}>*Informatik: Die Sprache der Zukunft*</span>
+        <span style={{ color: "green" }}>Informatik: Der Schlüssel zur Innovation</span>
+        <span style={{ color: "orange" }}>*Entdecke die Macht des Codes.*</span>
+        <span style={{ color: "red" }}>Informatik: Unendliche Möglichkeiten.</span>
+        <span style={{ color: "purple" }}>*Entdecke die Schönheit der Technologie*</span>
+    </h1>
+</div>
       <nav>
         {/* Navigation if needed */}
       </nav>
