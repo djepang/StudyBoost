@@ -69,10 +69,10 @@ function Informatikeinführung() {
         <section id="videos">
           <h2><strong>Lernvideos</strong></h2>
           <div className="video-container">
-            <YouTube videoId="https://youtu.be/JG-gofSMWGw" />
+            <YouTube videoId="" />
           </div>
           <div className="video-container">
-            <YouTube videoId="3Kq1MIfTWCE" />
+            <YouTube videoId="" />
           </div>
         </section>
       </main>
