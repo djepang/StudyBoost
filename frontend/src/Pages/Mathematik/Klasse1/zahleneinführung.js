@@ -6,12 +6,13 @@ function Zahleneinführung() {
   return (
     <div className="zahleneinfuehrung">
       {/* Header */}
-      <header className="zahleneinführung-header">
-        <h1><strong>Einführung Zahlen und Zählen</strong></h1>
-      </header>
       <nav>
           <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
         </nav>
+      <header className="zahleneinführung-header">
+        <h1><strong>Einführung Zahlen und Zählen</strong></h1>
+      </header>
+      
       {/* Hauptinhalt */}
       <main>
         {/* Abschnitt: Einführung Zahlen bis 20 */}

@@ -15,7 +15,7 @@ function Alphabeteinführung() {
         <h1>📚 <strong>Einführung in das Alphabet</strong> 📚</h1>
       </header>
       <nav>
-          <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+         
         </nav>
 
       {/* Hauptinhalt */}

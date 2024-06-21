@@ -15,7 +15,7 @@ const MathematikContentTest1 = () => {
                 color: '#333', 
             }}
         >   <nav>
-        <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
+        
       </nav>
             <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
             <Header />
