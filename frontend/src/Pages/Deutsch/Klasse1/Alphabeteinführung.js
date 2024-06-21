@@ -4,7 +4,6 @@ import Header from '../../../Components/Header/Header';
 import './Alphabeteinführung.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
-import { Link } from 'react-router-dom';
 function Alphabeteinführung() {
   return (
     <div className="Alphabeteinführung">
