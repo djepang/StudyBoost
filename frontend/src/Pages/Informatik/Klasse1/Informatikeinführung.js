@@ -66,12 +66,10 @@ function Informatikeinführung() {
         </section>
 
         {/* Abschnitt: Lernvideos */}
-        <section id="videos">
-          <h2><strong>Lernvideos</strong></h2>
+        <section className="video-section">
+          <h2>🎥 Lernvideos 🎥</h2>
           <div className="video-container">
-            <YouTube videoId="https://youtu.be/JG-gofSMWGw" />
-          </div>
-          <div className="video-container">
+            <YouTube videoId="JG-gofSMWGw" />
             <YouTube videoId="3Kq1MIfTWCE" />
           </div>
         </section>

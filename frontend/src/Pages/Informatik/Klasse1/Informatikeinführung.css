@@ -19,7 +19,7 @@ Informatikeinführung {
 }
 
 #counting-images {
-  background-color: #f5f5dc; /* Hintergrundfarbe für den Abschnitt Zählen durch Bilder */
+  background-color: #1846ce; /* Hintergrundfarbe für den Abschnitt Zählen durch Bilder */
   padding: 2rem;
   border-radius: 8px;
   margin: 1rem 0;
@@ -35,7 +35,7 @@ Informatikeinführung {
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   margin-bottom: 20px;
-  background-color: #fff; /* Hintergrundfarbe für jede Bildkarte */
+  background-color: #2b2ee2; /* Hintergrundfarbe für jede Bildkarte */
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
