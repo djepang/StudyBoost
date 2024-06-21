@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MathersteklasseImage from '../../assets/Mathersteklasse-image.jpg';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 const MathematikContentTest1 = () => {
     return (
+        <div> 
+            < Header/ >
+        
         <div
         
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -63,7 +68,9 @@ const MathematikContentTest1 = () => {
                     </ul>
                 </nav>
             </div>
-        </div>
+          </div>
+        < Footer/ >
+    </div>
     );
 }
 

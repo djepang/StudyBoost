@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InformatikImage from '../../assets/informatik-image.jpg';
 
+
 class InformatikContent extends React.Component {
   render() {
     return (
@@ -36,7 +37,7 @@ class InformatikContent extends React.Component {
                 <nav className="w-full mt-8 bg-white bg-opacity-75">
                     <ul className="flex flex-wrap justify-center gap-8">
                         <li>
-                            <Link to="/Informatik/Klasse1Test" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                            <Link to="/Informatik/Klasse1Informatiktest" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 <img src={InformatikImage} alt="Klasse1Test" className="h-10 w-10 mr-2 rounded-full object-cover" />
                                 Klasse 1 
                             </Link>
