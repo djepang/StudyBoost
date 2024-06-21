@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap';
 import './App.css';
+import { ThemeProvider } from './context/ThemeProvider';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
 import Help from './Pages/Help/Help';
@@ -26,6 +27,7 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 
 function App() {
   return (
+    <ThemeProvider>
     <div className="App">
       <Routes>
         <Route path="/register" element={<Register />} />
@@ -52,6 +54,7 @@ function App() {
         <Route path='*' element={<Error />} />
       </Routes>
     </div>
+  </ThemeProvider>
   );
 }
 
