@@ -17,6 +17,7 @@ class InformatikContent extends React.Component {
           backgroundBlendMode: 'overlay',
         }}
       >
+
         <div className="relative overflow-hidden w-full h-16 bg-white bg-opacity-75">
           <h1 className="text-4xl font-bold text-center text-black animate-marquee whitespace-nowrap">
             <span style={{ color: 'blue' }}>*Informatik: Die Sprache der Zukunft*</span>
