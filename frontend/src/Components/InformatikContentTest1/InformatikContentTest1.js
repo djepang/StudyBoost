@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import InformatikersteklasseImage from '../../assets/Informatikersteklasse-image.jpg';
 
-const InformatikContent = () => {
+const InformatikContentTest1 = () => {
     return (
         <div
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -65,4 +65,4 @@ const InformatikContent = () => {
     );
 }
 
-export default InformatikContent;
+export default InformatikContentTest1;
