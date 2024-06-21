@@ -9,6 +9,7 @@ const Informatik = () => {
             <Header />
             <InformatikContent />
             <Footer />
+            
         </div>
     )
 }
