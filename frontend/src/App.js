@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap';
 import './App.css';
-import { ThemeProvider } from './context/ThemeProvider';
+import { ThemeProvider } from './context/ThemeContext';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
 import Help from './Pages/Help/Help';
