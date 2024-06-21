@@ -1,15 +1,12 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import './Informatikeinführung.css';
-import { Link } from 'react-router-dom';
+
 
 function Informatikeinführung() {
   return (
     <div className="informatikeinfühhrung">
       {/* Header */}
-      <nav>
-        <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
-      </nav>
       <header className="Einformatikeinführung-header">
         <h1><strong>Einführung in die Informatik</strong></h1>
       </header>

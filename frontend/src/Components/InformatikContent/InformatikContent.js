@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
 import InformatikImage from '../../assets/informatik-image.jpg';
 
 const InformatikContent = () => {
@@ -20,7 +18,6 @@ const InformatikContent = () => {
         {/* Navigation if needed */}
       </nav>
       <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
-        <Header />
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">
           Informatikthemen für die erste Klasse
         </h1>
@@ -67,7 +64,6 @@ const InformatikContent = () => {
             </li>
           </ul>
         </nav>
-        <Footer />
       </div>
     </div>
   );

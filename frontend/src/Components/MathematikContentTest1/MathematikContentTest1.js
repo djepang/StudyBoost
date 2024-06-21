@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MathersteklasseImage from '../../assets/Mathersteklasse-image.jpg';
-import Header from '../../Components/Header/Header'
-import Footer from '../../Components/Footer/Footer'
 const MathematikContentTest1 = () => {
     return (
         <div
@@ -18,7 +16,6 @@ const MathematikContentTest1 = () => {
         
       </nav>
             <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
-            <Header />
                 <h1 className="text-4xl font-bold text-center text-purple-900 mb-8">
                     Mathematische Themen für die erste Klasse
                 </h1>
@@ -65,7 +62,6 @@ const MathematikContentTest1 = () => {
                         </li>
                     </ul>
                 </nav>
-                <Footer />
             </div>
         </div>
     );
