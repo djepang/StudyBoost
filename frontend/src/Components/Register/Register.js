@@ -1,96 +1,94 @@
-import React from 'react';
-import { Box, Button, Container, Grid, TextField, Typography } from '@mui/material';
-import { useForm } from 'react-hook-form';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
-import { useUserAuth } from '../../context/UserAuthContext'; // Stellen Sie sicher, dass der Pfad korrekt ist
-import { useNavigate } from 'react-router-dom'; // useNavigate aus react-router-dom importieren
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Header from '../../Components/Header/Header'
+import Footer from '../../Components/Footer/Footer'
+import './Register.css';
 
 const Register = () => {
-  const { register } = useUserAuth();
-  const { handleSubmit, register: formRegister, formState: { errors } } = useForm();
-  const navigate = useNavigate(); // useNavigate verwenden
+    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [errors, setErrors] = useState({});
+    const navigate = useNavigate();
 
-  const onSubmit = async (data) => {
-    try {
-      await register(data.email, data.password, data.username); // Hinzufügen des Benutzernamens zur Registrierung
-      alert('Erfolgreich registriert! Sie werden zur Startseite weitergeleitet.'); // Beispiel für eine Bestätigungsmeldung
-      navigate('/Home'); // Weiterleitung zur Startseite nach erfolgreicher Registrierung
-    } catch (error) {
-      console.error('Fehler bei der Registrierung:', error);
-      alert('Fehler bei der Registrierung. Bitte versuchen Sie es erneut.'); // Beispiel für Fehlermeldung
-    }
-  };
+    const validate = () => {
+        const errors = {};
 
-  return (
-    <div>
-      <Header />
-    <div>
-    <Box
-      sx={{
-        backgroundSize: 'cover',
-        minHeight: '10vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '8px',
-      }}
-    >
-      <Container maxWidth="sm">
-        <Typography variant="h1" align="center" gutterBottom sx={{ color: '#fff' }}>
-          Registrieren
-        </Typography>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <Grid container spacing={4}>
-            <Grid item xs={8}>
-              <TextField
-                {...formRegister('username', { required: 'Benutzername ist erforderlich' })}
-                fullWidth
-                label="Benutzername"
-                variant="outlined"
-                error={!!errors.username}
-                helperText={errors.username ? errors.username.message : ''}
-                sx={{ backgroundColor: '#fff', borderRadius: '10px' }}
-              />
-            </Grid>
-            <Grid item xs={8}>
-              <TextField
-                {...formRegister('email', { required: 'Email ist erforderlich' })}
-                fullWidth
-                label="Email"
-                variant="outlined"
-                error={!!errors.email}
-                helperText={errors.email ? errors.email.message : ''}
-                sx={{ backgroundColor: '#fff', borderRadius: '10px', mt: 4 }}
-              />
-            </Grid>
-            <Grid item xs={8}>
-              <TextField
-                {...formRegister('password', { required: 'Passwort ist erforderlich' })}
-                fullWidth
-                label="Passwort"
-                type="password"
-                variant="outlined"
-                error={!!errors.password}
-                helperText={errors.password ? errors.password.message : ''}
-                sx={{ backgroundColor: '#fff', borderRadius: '10px', mt: 4}}
-              />
-            </Grid>
-          </Grid>
-          <Box mt={3}>
-            <Button type="submit" fullWidth variant="contained" color="primary" sx={{ borderRadius: '12px' }}>
-              Registrieren
-            </Button>
-          </Box>
-        </form>
-      </Container>
-    </Box>
-    </div>
-    <Footer />
-  </div>
-  
-  );
+        if (!username) {
+            errors.username = 'Username is required';
+        }
+
+        if (!email) {
+            errors.email = 'Email is required';
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            errors.email = 'Email is invalid';
+        }
+
+        if (!password) {
+            errors.password = 'Password is required';
+        } else if (password.length < 6) {
+            errors.password = 'Password must be at least 6 characters';
+        }
+
+        return errors;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const errors = validate();
+        if (Object.keys(errors).length === 0) {
+            // Registration logic here (e.g., send data to API)
+            navigate('/');
+        } else {
+            setErrors(errors);
+        }
+    };
+
+    return (
+      <div>
+        < Header/ >
+        <div className="register-container">
+            <h1 className="register-title">Register</h1>
+            <form className="register-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="username">Username</label>
+                    <input
+                        type="text"
+                        id="username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        className={errors.username ? 'error-input' : ''}
+                    />
+                    {errors.username && <span className="error-text">{errors.username}</span>}
+                </div>
+                <div className="form-group">
+                    <label htmlFor="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className={errors.email ? 'error-input' : ''}
+                    />
+                    {errors.email && <span className="error-text">{errors.email}</span>}
+                </div>
+                <div className="form-group">
+                    <label htmlFor="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        className={errors.password ? 'error-input' : ''}
+                    />
+                    {errors.password && <span className="error-text">{errors.password}</span>}
+                </div>
+                <button type="submit" className="register-button">Register</button>
+            </form>
+        </div>
+        < Footer/ >
+      </div>
+    );
 };
 
 export default Register;
