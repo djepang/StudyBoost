@@ -61,10 +61,7 @@ class MathematikContent extends React.Component {
                             </Link>
                         </li>
                     </ul>
-
-                
-
-                </nav>
+               </nav>
             </div>
         );
     }
