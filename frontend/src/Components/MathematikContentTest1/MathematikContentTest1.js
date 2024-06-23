@@ -6,8 +6,7 @@ import Footer from '../../Components/Footer/Footer';
 const MathematikContentTest1 = () => {
     return (
         <div> 
-            < Header/ >
-        
+        < Header/ >
         <div
         
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -17,7 +16,8 @@ const MathematikContentTest1 = () => {
                 padding: '8rem 2rem', 
                 color: '#333', 
             }}
-        >   <nav>
+        >
+          <nav>
         
       </nav>
             <div className="w-full max-w-4xl mx-auto p-8 bg-white bg-opacity-90 rounded-lg shadow-lg">
