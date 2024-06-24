@@ -55,7 +55,7 @@ const InformatikContentTest1 = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Informatik/Klasse1Algorithmen" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                            <Link to="/Informatik/Klasse1Informatikalgorithmen" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 Algorithmen
                             </Link>
                         </li>

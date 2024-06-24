@@ -1,6 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import Header from '../../../Components/Header/Header';
+import Footer from '../../../Components/Footer/Footer'
 import './Alphabeteinführung.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
@@ -91,10 +92,9 @@ function Alphabeteinführung() {
         </section>
       </main>
 
+     < Footer/ >
       {/* Footer */}
-      <footer>
-        <p>© 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
-      </footer>
+      
     </div>
   );
 }

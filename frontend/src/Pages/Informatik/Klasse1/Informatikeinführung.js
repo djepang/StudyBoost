@@ -1,10 +1,14 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import Header from '../../../Components/Header/Header';
+import Footer from '../../../Components/Footer/Footer';
 import './Informatikeinführung.css';
 
 
 function Informatikeinführung() {
   return (
+    <div>
+    < Header/ >
     <div className="informatikeinfühhrung">
       {/* Header */}
       <header className="Einformatikeinführung-header">
@@ -71,12 +75,10 @@ function Informatikeinführung() {
           </div>
         </section>
       </main>
-
       {/* Footer */}
-      <footer>
-        <p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
-      </footer>
-    </div>
+      < Footer/ >
+      </div>
+   </div>  
   );
 }
 

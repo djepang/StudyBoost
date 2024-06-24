@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap';
 import './App.css';
-import { ThemeProvider } from './context/ThemeProvider';
+import { ThemeProvider } from './context/ThemeContext';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
 import Help from './Pages/Help/Help';
@@ -25,6 +25,7 @@ import Klasse1zahleneinführung from './Pages/Mathematik/Klasse1/zahleneinführu
 import Klasse1Woertersaetze from './Pages/Deutsch/Klasse1/Woertersaetze';
 import Klasse1Alphabeteinführung from './Pages/Deutsch/Klasse1/Alphabeteinführung';
 import Klasse1Informatikeinführung from './Pages/Informatik/Klasse1/Informatikeinführung';
+import Klasse1Informatikalgorithmen from './Pages/Informatik/Klasse1/Algorithmen'
 import Klasse1GeschichtenMaerchen from './Pages/Deutsch/Klasse1/GeschichtenMaerchen';
 import Klasse1additionsubtraktion from './Pages/Mathematik/Klasse1/additionsubtraktion';
 import Klasse1formenmuster from './Pages/Mathematik/Klasse1/formenmuster';
@@ -33,7 +34,7 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 function App() {
   return (
     <ThemeProvider>
-    <div className="App">
+      <div className='App'>
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
@@ -50,6 +51,7 @@ function App() {
         <Route path="/Deutsch/Klasse1deutsch" element={<Klasse1deutsch />} />
         <Route path="/Deutsch/Klasse1Woertersaetze" element={<Klasse1Woertersaetze />} />
         <Route path="/Informatik/Klasse1Informatikeinführung" element={<Klasse1Informatikeinführung />} />
+        <Route path="/Informatik/Klasse1Informatikalgorithmen" element={<Klasse1Informatikalgorithmen />} />
         <Route path="/Deutsch/Klasse1Alphabeteinführung" element={<Klasse1Alphabeteinführung />} />
         <Route path="/Deutsch/Klasse1GeschichtenMaerchen" element={<Klasse1GeschichtenMaerchen />} />
         <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
@@ -62,8 +64,8 @@ function App() {
         <Route path="/InformatikContentTest1" element={<InformatikContentTest1 />} />
         <Route path="/DeutschContentTest1" element={<DeutschContentTest1 />} />
         <Route path="*" element={<Error />} />
-      </Routes>
-    </div>
+      </Routes> 
+      </div> 
   </ThemeProvider>
   );
 }
