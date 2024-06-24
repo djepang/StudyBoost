@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import axios from 'axios'; 
+import axios from 'axios';
 
 const googleID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
@@ -24,7 +24,7 @@ const Login = () => {
       if (response.data) {
         console.log('Login successful:', response.data);
         setIsLoggedIn(true);
-        navigate('/'); // Redirect to home page after successful login
+        navigate('/Home'); // Redirect to home page after successful login
       } else {
         setLoginError('Login failed. No response data.');
       }
