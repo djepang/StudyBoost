@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import axios from 'axios'; // Import axios for API calls
+import axios from 'axios'; 
 
 const googleID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
 
