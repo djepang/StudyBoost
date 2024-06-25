@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  
  ##Backend
  wie kann ich die Route testen :
-//Register Route:
+//Register Route:test
 ZB:
  curl -X POST http://localhost:5000/api/auth/register -H "Content-Type: application/json" -d '{
   "username": "testuserandre",//schon vergeben
@@ -79,7 +79,7 @@ ZB:
   "password": "testpassword"//schon vergeben 
 }'
 
-//Login Route:
+//Login Route:/Test Route
 ZB:
  curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d '{
   "email": "testuserandre@example.com",
@@ -87,3 +87,4 @@ ZB:
 }'
 
 //JWT_SECRET:um secret key zu generieren : openssl rand -hex 32
+

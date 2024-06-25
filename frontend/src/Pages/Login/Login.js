@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import axios from 'axios';
@@ -11,6 +11,7 @@ const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   const { email, password } = formData;
 
@@ -30,6 +31,7 @@ const Login = () => {
       localStorage.setItem('token', token);
       setMessage('Login successful!');
       setIsLoggedIn(true);
+      navigate('/courses'); // Redirect to course page
     } catch (err) {
       console.error('Error:', err);  // Log the error object for debugging
       if (err.response && err.response.data) {
@@ -45,6 +47,7 @@ const Login = () => {
     console.log('Google Login Success:', credentialResponse);
     // Hier können Sie die API-Anfrage für die Google-Anmeldung hinzufügen.
     setIsLoggedIn(true);
+    navigate('/courses'); // Redirect to course page after Google login
   };
 
   const handleGoogleLoginFailure = error => {

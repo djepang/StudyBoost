@@ -12,23 +12,23 @@ const Header = () => {
     };
 
     return (
-        <header className="p-3 flex justify-between">
-            <div className="flex justify-between w-32">
-                <Monitor className="text-blue-600" />
-                <span className="text-lg text-blue-600 font-bold">StudyBoost</span>
+        <header className="p-4 bg-gradient-to-r from-blue-500 to-blue-700 shadow-md flex justify-between items-center">
+            <div className="flex items-center space-x-2">
+                <Monitor className="text-white" />
+                <span className="text-lg text-white font-bold">StudyBoost</span>
             </div>
             <nav>
-                <ul className="flex flex-row gap-5">
-                    <li><Link to="/" className="font-medium hover:underline">Home</Link></li>
-                    <li><Link to="/courses" className="font-medium hover:underline">Kurse</Link></li>
-                    <li><Link to="/help" className="font-medium hover:underline">Hilfe</Link></li>
-                    <li><Link to="/login" className="bg-blue-600 p-2 rounded-lg text-white border border-b-4 border-blue-800 hover:border-b-2">Login</Link></li>
-                    <li><Link to="/register" className="bg-blue-600 p-2 rounded-lg text-white border border-b-4 border-blue-800 hover:border-b-2">Register</Link></li>
+                <ul className="flex flex-row gap-6">
+                    <li><Link to="/" className="text-white font-medium hover:underline">Home</Link></li>
+                    <li><Link to="/courses" className="text-white font-medium hover:underline"></Link></li>
+                    <li><Link to="/help" className="text-white font-medium hover:underline">Hilfe</Link></li>
+                    <li><Link to="/login" className="bg-white p-2 rounded-lg text-blue-600 border border-b-4 border-blue-800 hover:border-b-2">Login</Link></li>
+                    <li><Link to="/register" className="bg-white p-2 rounded-lg text-blue-600 border border-b-4 border-blue-800 hover:border-b-2">Register</Link></li>
                 </ul>
             </nav>
             <button onClick={handleThemeToggle} className="p-2 rounded-full focus:outline-none">
-            {theme === 'light' ? <Sun className="w-6 h-6 text-yellow-500" /> : <Moon className="w-6 h-6 text-gray-200" />}
-          </button>
+                {theme === 'light' ? <Sun className="w-6 h-6 text-yellow-500" /> : <Moon className="w-6 h-6 text-gray-200" />}
+            </button>
         </header>
     );
 };
