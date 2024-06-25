@@ -60,7 +60,7 @@ const InformatikContentTest1 = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/Informatik/Klasse1Programmierung" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+                            <Link to="/Informatik/Klasse1Informatikprogrammierung" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
                                 Programmierung
                             </Link>
                         </li>

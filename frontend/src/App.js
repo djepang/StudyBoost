@@ -9,7 +9,7 @@ import Login from './Pages/Login/Login';
 import Error from './Pages/Error/Error';
 import Hausaufgabenhilfe from './Pages/Hausaufgabenhilfe/Hausaufgabenhilfe';
 import Notenverbesserung from './Pages/Notenverbesserung/Notenverbesserung';
-import Register from './Components/Register/Register';
+import Register from './Pages/Register/Register';
 import Mathematik from './Pages/Mathematik/Mathematik';
 import Informatik from './Pages/Informatik/Informatik';
 import MathematikContent from './Components/MathematikContent/MathematikContent';
@@ -26,6 +26,7 @@ import Klasse1Woertersaetze from './Pages/Deutsch/Klasse1/Woertersaetze';
 import Klasse1Alphabeteinführung from './Pages/Deutsch/Klasse1/Alphabeteinführung';
 import Klasse1Informatikeinführung from './Pages/Informatik/Klasse1/Informatikeinführung';
 import Klasse1Informatikalgorithmen from './Pages/Informatik/Klasse1/Algorithmen'
+import Klasse1Informatikprogrammierung from './Pages/Informatik/Klasse1/Programmierung'
 import Klasse1GeschichtenMaerchen from './Pages/Deutsch/Klasse1/GeschichtenMaerchen';
 import Klasse1additionsubtraktion from './Pages/Mathematik/Klasse1/additionsubtraktion';
 import Klasse1formenmuster from './Pages/Mathematik/Klasse1/formenmuster';
@@ -52,6 +53,7 @@ function App() {
         <Route path="/Deutsch/Klasse1Woertersaetze" element={<Klasse1Woertersaetze />} />
         <Route path="/Informatik/Klasse1Informatikeinführung" element={<Klasse1Informatikeinführung />} />
         <Route path="/Informatik/Klasse1Informatikalgorithmen" element={<Klasse1Informatikalgorithmen />} />
+        <Route path="/Informatik/Klasse1Informatikprogrammierung" element={<Klasse1Informatikprogrammierung />} />
         <Route path="/Deutsch/Klasse1Alphabeteinführung" element={<Klasse1Alphabeteinführung />} />
         <Route path="/Deutsch/Klasse1GeschichtenMaerchen" element={<Klasse1GeschichtenMaerchen />} />
         <Route path="/Mathematik/Klasse1zahleneinführung" element={<Klasse1zahleneinführung />} />
