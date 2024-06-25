@@ -2,30 +2,56 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
+import axios from 'axios';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 const googleID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
-const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Zustand für die Anzeige der Anmeldebestätigung
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Login:', { username, password });
-    // Simuliere erfolgreiche Anmeldung
-    setIsLoggedIn(true);
+const Login = () => {
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const { email, password } = formData;
+
+  const onChange = e => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    console.log('Form Data Changed:', formData);  // Log updated formData
   };
 
-  const handleGoogleLoginSuccess = (credentialResponse) => {
+  const onSubmit = async e => {
+    e.preventDefault();
+    console.log('Form Submitted:', formData);  // Log formData before sending request
+    try {
+      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      console.log('Response:', res);  // Log the entire response object for debugging
+      const token = res.data.token;
+      console.log('JWT Token:', token);  // Display the token in the console
+      localStorage.setItem('token', token);
+      setMessage('Login successful!');
+      setIsLoggedIn(true);
+    } catch (err) {
+      console.error('Error:', err);  // Log the error object for debugging
+      if (err.response && err.response.data) {
+        console.error('Error Response Data:', err.response.data);  // Log the specific error data
+        setMessage(err.response.data.message || 'Login failed.');
+      } else {
+        setMessage('Login failed.');
+      }
+    }
+  };
+
+  const handleGoogleLoginSuccess = credentialResponse => {
     console.log('Google Login Success:', credentialResponse);
     // Hier können Sie die API-Anfrage für die Google-Anmeldung hinzufügen.
     setIsLoggedIn(true);
   };
 
-  const handleGoogleLoginFailure = (error) => {
+  const handleGoogleLoginFailure = error => {
     console.log('Google Login failed:', error);
   };
+
+  console.log('Rendering Login Component...');  // Log when the component renders
 
   return (
     <GoogleOAuthProvider clientId={googleID}>
@@ -39,23 +65,23 @@ const Login = () => {
             }}
           ></div>
           <div className="w-full p-8 lg:w-1/2">
-            <p className="text-xl text-gray-600 text-center">Welcome back!</p>
-            {isLoggedIn ? ( // Wenn eingeloggt, zeige diese Nachricht
+            {message && (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4" role="alert">
-                <strong className="font-bold">Erfolgreich angemeldet!</strong>
-                <span className="block sm:inline"> Sie sind jetzt eingeloggt.</span>
+                <strong className="font-bold">{message}</strong>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+            )}
+            {!isLoggedIn && (
+              <form onSubmit={onSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="username" className="block text-sm font-medium text-gray-700">
-                    Username
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    Email
                   </label>
                   <input
-                    type="text"
-                    id="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={onChange}
                     required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
@@ -67,8 +93,9 @@ const Login = () => {
                   <input
                     type="password"
                     id="password"
+                    name="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={onChange}
                     required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
@@ -85,7 +112,7 @@ const Login = () => {
               <GoogleLogin
                 onSuccess={handleGoogleLoginSuccess}
                 onError={handleGoogleLoginFailure}
-                render={(renderProps) => (
+                render={renderProps => (
                   <button
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}

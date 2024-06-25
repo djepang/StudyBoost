@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 
+ ##Backend
+ wie kann ich die Route testen :
+//Register Route:
+ZB:
+ curl -X POST http://localhost:5000/api/auth/register -H "Content-Type: application/json" -d '{
+  "username": "testuserandre",//schon vergeben
+  "email": "testuserandre@example.com",//schon Vergeben
+  "password": "testpassword"//schon vergeben 
+}'
+
+//Login Route:
+ZB:
+ curl -X POST http://localhost:5000/api/auth/login -H "Content-Type: application/json" -d '{
+  "email": "testuserandre@example.com",
+  "password": "testpassword"
+}'
+
+//JWT_SECRET:um secret key zu generieren : openssl rand -hex 32

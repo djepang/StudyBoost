@@ -6,29 +6,30 @@ import * as THREE from 'three';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry';
 
-const ErrorPage = ({ errorCode }) => {
+const ErrorPage = ({ errorCode, errorMessage }) => {
     const containerRef = useRef();
 
     useEffect(() => {
         // Erstelle eine neue Szene
         const scene = new THREE.Scene();
-        
+
         // Erstelle eine neue Kamera
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        
+
         // Erstelle ein neues Rendervorrichtung
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
         containerRef.current.appendChild(renderer.domElement);
-        
+
         // Erstelle ein neues Licht
         const light = new THREE.AmbientLight(0xffffff);
         scene.add(light);
-        
+
         // Lade die Schriftart und erstelle den 3D-Text
         const loader = new FontLoader();
         loader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', (font) => {
-            const geometry = new TextGeometry('Error', {
+            const textContent = errorMessage ? errorMessage : 'Error'; // Verwende errorMessage oder Standard "Error"
+            const geometry = new TextGeometry(textContent, {
                 font: font,
                 size: 1,
                 height: 0.2,
@@ -64,7 +65,7 @@ const ErrorPage = ({ errorCode }) => {
                 currentContainer.removeChild(renderer.domElement);
             }
         };
-    }, []);
+    }, [errorMessage]); // Überwache errorMessage in der Abhängigkeitsliste
 
     return (
         <div>
@@ -80,7 +81,8 @@ const ErrorPage = ({ errorCode }) => {
 }
 
 ErrorPage.propTypes = {
-    errorCode: PropTypes.string.isRequired, // Prop-Validierung hinzugefügt
+    errorCode: PropTypes.string.isRequired,
+    errorMessage: PropTypes.string // Optionaler Prop für die Fehlermeldung
 };
 
 export default ErrorPage;
