@@ -1,150 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
-
-body {
-  font-family: 'Comic Neue', sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
-  margin: 0;
-  padding: 0;
+.footer {
+  background-color: #6a5acd;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .main-content {
+  padding: 2rem;
   text-align: center;
-  padding: 20px;
 }
 
 .hero-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .hero-text {
-  flex: 1;
-  text-align: left;
+  margin-bottom: 1rem;
 }
 
 .hero-text h1 {
-  font-family: 'Fredoka One', sans-serif;
-  font-size: 2.5em;
-  color: #ff6347;
+  font-size: 2.5rem;
+  color: #ff4500;
 }
 
-.hero-text .intro-text {
-  font-family: 'Comic Neue', sans-serif;
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 20px;
+.intro-text {
+  font-size: 1.25rem;
+  color: #008b8b;
 }
 
 .hero-media {
-  flex: 1;
-  max-width: 500px;
-  margin: 20px;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .algorithm-image {
-  width: 100%;
-  max-width: 300px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transform: rotateY(10deg) rotateX(10deg);
-  transition: transform 0.5s;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-.algorithm-image:hover {
-  transform: rotateY(0deg) rotateX(0deg) scale(1.1);
+.video-container {
+  margin-bottom: 1rem;
 }
-.video-container.vertical {
-    width: 100%;
-    max-width: 600px; /* Maximalbreite für den vertikalen Container */
-    margin: 0 auto 20px; /* Zentriert und Abstand unten */
-  }
-  
-  .video-container.vertical iframe {
-    width: 100%;
-    height: 315px; /* Höhe der Videos anpassen */
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s;
-  }
-  
-  .video-container.vertical iframe:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Stil für den horizontalen Video-Container */
-  .video-container.horizontal {
-    display: flex;
-    justify-content: space-between; /* Platz zwischen den Videos maximieren */
-  }
-  
-  .video-container.horizontal .video-item {
-    width: calc(50% - 10px); /* Breite für jedes Video berechnen */
-  }
-  
-  .video-container.horizontal .video-item iframe {
-    width: 100%;
-    height: 100%; /* Volle Höhe der Container */
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s;
-  }
-  
-  .video-container.horizontal .video-item iframe:hover {
-    transform: scale(1.05);
-  }
 
 .quiz-section {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  background-color: #ebecbf;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .quiz-question h2 {
-  font-family: 'Fredoka One', sans-serif;
-  font-size: 1.8em;
-  color: #ff6347;
+  font-size: 1.75rem;
+  color: #ff4500;
 }
 
 .quiz-option {
-  margin: 10px 0;
-  text-align: left;
-}
-
-.quiz-option input[type='radio'] {
-  margin-right: 10px;
+  margin-bottom: 1rem;
 }
 
 .quiz-option label {
-  font-family: 'Comic Neue', sans-serif;
-  font-size: 1.1em;
-  color: #333;
+  font-size: 1.25rem;
+  color: #2e8b57;
 }
 
 .answer-button {
-  background-color: #32cd32;
-  color: #fff;
+  background-color: #6a5acd;
+  color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s;
-  font-family: 'Fredoka One', sans-serif;
+  border-radius: 4px;
+  margin-top: 1rem;
 }
 
-.answer-button:hover {
-  background-color: #2e8b57;
+.answer-button:disabled {
+  background-color: #ccc;
+}
+
+.emoji-container {
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
 .results-section {
@@ -152,56 +93,47 @@ body {
 }
 
 .quiz-results {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .quiz-result {
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 .correct-answer {
   color: #32cd32;
+  font-size: 1.25rem;
 }
 
 .incorrect-answer {
-  color: #ff6347;
+  color: #dc143c;
+  font-size: 1.25rem;
 }
 
 .result {
-  margin-top: 20px;
-  font-size: 1.2em;
+  margin-top: 2rem;
 }
 
 .next-button {
-  background-color: #1e90ff;
-  color: #fff;
+  background-color: #6a5acd;
+  color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
-  font-size: 1em;
-  transition: background-color 0.3s;
-  font-family: 'Fredoka One', sans-serif;
-}
-
-.next-button:hover {
-  background-color: #1c86ee;
+  border-radius: 4px;
+  margin-top: 1rem;
 }
 
 .progress-bar {
-  margin-top: 20px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  height: 10px;
+  background-color: #eee;
+  border-radius: 8px;
   overflow: hidden;
+  margin-top: 2rem;
+  height: 20px;
 }
 
 .progress {
-  background-color: #32cd32;
+  background-color: #6a5acd;
   height: 100%;
-  transition: width 0.5s;
 }
