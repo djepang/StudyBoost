@@ -1,10 +1,13 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 import './zahleneinführung.css';
+import Header from '../../../Components/Header/Header';
+import Footer from '../../../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
 function Zahleneinführung() {
   return (
     <div className="zahleneinfuehrung">
+      < Header/ >
       {/* Header */}
       <nav>
           <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
@@ -102,11 +105,8 @@ function Zahleneinführung() {
           </div>
         </section>
       </main>
-
+      < Footer/ >
       {/* Footer */}
-      <footer>
-        <p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
-      </footer>
     </div>
   );
 }

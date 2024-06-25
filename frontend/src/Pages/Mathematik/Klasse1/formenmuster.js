@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import YouTube from 'react-youtube';
 import './formenmuster.css';
+import Header from '../../../Components/Header/Header';
+import Footer from '../../../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
 
@@ -30,8 +32,9 @@ const FormenMuster = () => {
   };
 
   return (
+     <div>
+      < Header/ >
     <div className="formen-muster-container">
-      
       <nav>
           <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
         </nav>
@@ -96,11 +99,10 @@ const FormenMuster = () => {
           <YouTube videoId="XR0Kbs-3RY8" />
         </div>
       </section>
-
-      <footer>
-        <p>&copy; 2024 Beispielunterricht. Alle Rechte vorbehalten.</p>
-      </footer>
+      < Footer/ >
     </div>
+    </div>
+
   );
 };
 
