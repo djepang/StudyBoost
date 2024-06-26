@@ -1,38 +1,60 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import axios from 'axios';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 const googleID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
-const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Zustand für die Anzeige der Anmeldebestätigung
-  const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+const Login = () => {
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
+
+  const { email, password } = formData;
+
+  const onChange = e => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    console.log('Form Data Changed:', formData);  // Log updated formData
+  };
+
+  const onSubmit = async e => {
     e.preventDefault();
+    console.log('Form Submitted:', formData);  // Log formData before sending request
     try {
-      const response = await axios.post('http://localhost:8080/api/auth/signin', { email: username, password });
+      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      console.log('Response:', res);  // Log the entire response object for debugging
+      const token = res.data.token;
+      console.log('JWT Token:', token);  // Display the token in the console
+      localStorage.setItem('token', token);
+      setMessage('Login successful!');
       setIsLoggedIn(true);
-      setMessage(response.data.message); // Willkommensnachricht setzen
-      // Hier können Sie den Token speichern und den Benutzer weiterleiten
-    } catch (error) {
-      setMessage('Login failed. Please check your credentials and try again.');
+      navigate('/courses'); // Redirect to course page
+    } catch (err) {
+      console.error('Error:', err);  // Log the error object for debugging
+      if (err.response && err.response.data) {
+        console.error('Error Response Data:', err.response.data);  // Log the specific error data
+        setMessage(err.response.data.message || 'Login failed.');
+      } else {
+        setMessage('Login failed.');
+      }
     }
   };
 
-  const handleGoogleLoginSuccess = (credentialResponse) => {
+  const handleGoogleLoginSuccess = credentialResponse => {
     console.log('Google Login Success:', credentialResponse);
     // Hier können Sie die API-Anfrage für die Google-Anmeldung hinzufügen.
     setIsLoggedIn(true);
+    navigate('/courses'); // Redirect to course page after Google login
   };
 
-  const handleGoogleLoginFailure = (error) => {
+  const handleGoogleLoginFailure = error => {
     console.log('Google Login failed:', error);
   };
+
+  console.log('Rendering Login Component...');  // Log when the component renders
 
   return (
     <GoogleOAuthProvider clientId={googleID}>
@@ -52,16 +74,17 @@ const Login = () => {
               </div>
             )}
             {!isLoggedIn && (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={onSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="username" className="block text-sm font-medium text-gray-700">
-                    Username
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                    Email
                   </label>
                   <input
-                    type="text"
-                    id="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={onChange}
                     required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
@@ -73,8 +96,9 @@ const Login = () => {
                   <input
                     type="password"
                     id="password"
+                    name="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={onChange}
                     required
                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                   />
@@ -91,7 +115,7 @@ const Login = () => {
               <GoogleLogin
                 onSuccess={handleGoogleLoginSuccess}
                 onError={handleGoogleLoginFailure}
-                render={(renderProps) => (
+                render={renderProps => (
                   <button
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
