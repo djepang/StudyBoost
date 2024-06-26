@@ -1,0 +1,88 @@
+.zahleneinführung {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f0f8ff; /* Hintergrundfarbe für den gesamten Container */
+}
+
+.zahleneinführung-header {
+  background-color: #121afa; /* Hintergrundfarbe für den Header */
+  color: rgb(46, 44, 44);
+  padding: 1rem;
+  text-align: center;
+}
+
+#introduction {
+  background-color: #0fd516; /* Hintergrundfarbe für den Einführungsabschnitt */
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+#counting-images {
+  background-color: #f5f5dc; /* Hintergrundfarbe für den Abschnitt Zählen durch Bilder */
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Abstand zwischen Bildkarten */
+}
+
+.image-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #fff; /* Hintergrundfarbe für jede Bildkarte */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+#number-lines {
+  background-color: #9b42c7; /* Hintergrundfarbe für den Abschnitt Zahlenlinien */
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #4682b4; /* Hintergrundfarbe für den Footer */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Abstand zwischen Zahlen */
+}
+
+.number-item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 1.2em; /* Schriftgröße für Zahlen-Items */
+}
+
+.number-item:nth-child(odd) {
+  background-color: #c92561; /* helle Farbe für ungerade Elemente */
+}
+
+.number-item:nth-child(even) {
+  background-color: #7648ca; /* dunklere Farbe für gerade Elemente */
+}
+
+.center-text {
+  text-align: center;
+}

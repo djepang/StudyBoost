@@ -1,0 +1,9 @@
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     5955    5312    5955       3400  cons0     197609 00:11:38 /usr/bin/winpty
+     5312       1    5312      33384  cons0     197609 15:49:34 /usr/bin/bash
+     5303    5004    5303      22036  cons1     197609 15:35:10 /usr/bin/bash
+     2784       1    2784      28604  cons2     197609   Jun 23 /usr/bin/bash
+     5311    5303    5303      44808  cons1     197609 15:35:11 /c/Program Files/nodejs/node
+     5004       1    5004      33564  cons1     197609 15:17:12 /usr/bin/bash
+     6128    5956    6128      16252  cons3     197609 00:35:54 /usr/bin/PS
+     5956       1    5956       3828  cons3     197609 00:18:56 /usr/bin/bash
