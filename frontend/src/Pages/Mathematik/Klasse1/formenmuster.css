@@ -5,7 +5,7 @@
 }
 
 .header {
-  background-color: #4747ff;
+  background-color: #96f28b;
   color: rgb(25, 25, 30);
   padding: 20px;
   text-align: center;
@@ -52,8 +52,8 @@
 }
 
 .pattern-board {
-  background-color: hsl(227, 71%, 49%);
-  border: 2px dashed #756bc9;
+  background-color: hsl(113, 94%, 62%);
+  border: 2px dashed #82c96b;
   border-radius: 8px;
   padding: 20px;
   min-height: 200px;

@@ -5,14 +5,14 @@
 }
 
 .zahleneinführung-header {
-  background-color: #121afa; /* Hintergrundfarbe für den Header */
+  background-color: #8083e6; /* Hintergrundfarbe für den Header */
   color: rgb(46, 44, 44);
   padding: 1rem;
   text-align: center;
 }
 
 #introduction {
-  background-color: #0fd516; /* Hintergrundfarbe für den Einführungsabschnitt */
+  background-color: #4e56e9; /* Hintergrundfarbe für den Einführungsabschnitt */
   padding: 2rem;
   border-radius: 8px;
   margin: 1rem 0;
@@ -48,7 +48,7 @@
 }
 
 #number-lines {
-  background-color: #9b42c7; /* Hintergrundfarbe für den Abschnitt Zahlenlinien */
+  background-color: #5e7dd1; /* Hintergrundfarbe für den Abschnitt Zahlenlinien */
   padding: 2rem;
   border-radius: 8px;
   margin: 1rem 0;
@@ -76,7 +76,7 @@ footer {
 }
 
 .number-item:nth-child(odd) {
-  background-color: #c92561; /* helle Farbe für ungerade Elemente */
+  background-color: #8495df; /* helle Farbe für ungerade Elemente */
 }
 
 .number-item:nth-child(even) {
