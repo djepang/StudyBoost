@@ -7,8 +7,6 @@ import transparentImage from '../../../assets/transparent-image.png';
 import QuestSpiel from '../../../Components/QuestSpiel/QuestSpiel';
 import GameLink from '../../../Components/GameLink/GameLink'; 
 import './addition-subtraktion.css';
-import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
 const TransparentImage = ({ src }) => (
@@ -53,8 +51,6 @@ const ImageGallery = () => (
 
 function AdditionSubtraktion() {
   return (
-    <div>
-      < Header/ >
     <div className="addition-subtraktion">
       
       <nav>
@@ -74,8 +70,6 @@ function AdditionSubtraktion() {
         <GameLink /> {/* Einfügen der GameLink-Komponente */}
       </main>
       </div>
-      < Footer/ >
-    </div>
   );
 }
 

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import './Programmierung.css';
-import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer'; 
+import './Programmierung.css'; 
 import magicWizard from '../../../assets/magic-wizard.png'; 
 import robotImage from '../../../assets/robot.png'; 
 import webDevelopment from '../../../assets/web-development.png'; 
@@ -86,8 +84,6 @@ class Programmierung extends Component {
     const currentQuiz = this.questions[currentQuestion];
 
     return (
-      <div>
-        <Header />
         <div className="programming-container">
           <header className="header">
             <h1>Was ist Programmierung?</h1>
@@ -165,9 +161,7 @@ class Programmierung extends Component {
               </div>
             </section>
           </main>
-          <Footer />
         </div>
-      </div>
     );
   }
 }

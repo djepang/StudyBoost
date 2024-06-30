@@ -1,7 +1,5 @@
 import React from 'react';
 import YouTube from 'react-youtube';
-import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer'
 import './Alphabeteinführung.css';
 import appleImage from '../../../assets/apple-image.png';
 import ballImage from '../../../assets/ball-image.png';
@@ -9,15 +7,13 @@ function Alphabeteinführung() {
   return (
     <div className="Alphabeteinführung">
       <div>
-      <Header />
+  
     </div>
       <header className="Alphabeteinführung-header">
         <h1>📚 <strong>Einführung in das Alphabet</strong> 📚</h1>
       </header>
       <nav>
-         
-        </nav>
-
+      </nav>
       {/* Hauptinhalt */}
       <main>
         {/* Abschnitt: Einführung Alphabet */}
@@ -91,11 +87,8 @@ function Alphabeteinführung() {
           </div>
         </section>
       </main>
-
-     < Footer/ >
       {/* Footer */}
-      
-    </div>
+      </div>
   );
 }
 

@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DeutschersteklasseImage from '../../assets/Deutschersteklasse-image.jpg';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+
 
 const DeutschContentTest1 = () => {
     return (
         <div>
-            < Header/ >
         
         <div
             className="flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
@@ -74,7 +72,6 @@ const DeutschContentTest1 = () => {
                 </nav>
             </div>
          </div>
-        < Footer/ >
      </div>
     );
 }

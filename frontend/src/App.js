@@ -1,6 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap';
 import './App.css';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import Main from './Components/Main/Main';
 import { ThemeProvider } from './context/ThemeContext';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
@@ -35,7 +38,8 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 function App() {
   return (
     <ThemeProvider>
-      <div className='App'>
+      <div className='.App flex-col min-h-screen'>
+      <Header />
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
@@ -67,7 +71,9 @@ function App() {
         <Route path="/DeutschContentTest1" element={<DeutschContentTest1 />} />
         <Route path="*" element={<Error />} />
       </Routes> 
-      </div> 
+    <Main />
+    <Footer />
+   </div> 
   </ThemeProvider>
   );
 }

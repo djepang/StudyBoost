@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import YouTube from 'react-youtube';
 import './GeschichtenMaerchen.css';
-import Header from '../../../Components/Header/Header';
 import pumucklAudio from '../../../assets/pumuckl-und-der-geburtstag.mp3';
 import { Link } from 'react-router-dom';
 
@@ -58,16 +57,13 @@ function Märchen() {
   };
 
   return (
-    <div className="page-container">
-       <div>
-      <Header />
+    <div className=".page-container">
+      <div className='Header'>
       {<h2>🌟 Geschichten und Märchen 🌟</h2>}
-    </div>
-      
-      <nav>
+      </div>
+        <nav>
           <Link to="/"> <strong>Zurück zur Homeseite </strong></Link>
         </nav>
-
       <main>
         <div className="quote">
           <p>"Ein Buch ist ein Traum, den du in deinen Händen hältst." - Neil Gaiman</p>
@@ -97,7 +93,6 @@ function Märchen() {
         <section className="audio-section">
           <h2>🎧 Hörbuch "Pumuckl und der Geburtstag" 🎂</h2>
           <div className="audio-container">
-            <div className="audio">
               <h3>Pumuckl und der Geburtstag 🎉</h3>
               <audio ref={audioRef} src={pumucklAudio} className="hidden"></audio>
               <button className="play-button" onClick={togglePlay}>
@@ -110,13 +105,9 @@ function Märchen() {
                 <span>{formatTime(currentTime)}</span> / <span>{formatTime(duration)}</span>
               </div>
             </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <p>© 2024 Märchenwelt. Alle Rechte vorbehalten.</p>
-      </footer>
-    </div>
+           </section>
+        </main>
+      </div>
   );
 }
 

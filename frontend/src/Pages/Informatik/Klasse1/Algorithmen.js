@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './Algorithmen.css';
-import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer/Footer';
 import AlgorithmImage from '../../../assets/algorithm.png';
 
 const Algorithmen = () => {
@@ -90,7 +88,6 @@ const Algorithmen = () => {
 
   return (
     <div className="algorithmen-container">
-      <Header />
       <main className="main-content">
         {!quizCompleted && (
           <div className="hero-section">
@@ -162,7 +159,7 @@ const Algorithmen = () => {
               <h2>Quiz abgeschlossen!</h2>
               <div className="quiz-results">
                 {quizAnswers.map((quiz, index) => (
-                  <div key={`result-${index}`} className="quiz-result">
+                  <div key={'result-${index}'} className="quiz-result">
                     <p>
                       <strong>Frage:</strong> {quiz.question}
                     </p>
@@ -193,7 +190,6 @@ const Algorithmen = () => {
           <div className="progress" style={{ width: `${progress}%` }}></div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 };

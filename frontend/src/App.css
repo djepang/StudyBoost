@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: right;
   justify-content: right;
-  font-size: calc(15px + 2vmim);
+  font-size: calc(20px + 2vmim);
   color: white;
 }
 
@@ -48,22 +48,22 @@
       opacity: 1;
   }
 }
-body.light {
+.App body.light {
   background-color: white;
   color: black;
 }
 
-body.dark {
+.App body.dark {
   background-color: black;
   color: white;
 }
 
-.header-light, .footer-light, .main-light {
+.App header-light, .Appfooter-light, .App main-light {
   background-color: white;
   color: black;
 }
 
-.header-dark, .footer-dark, .main-dark {
+.App header-dark, .App footer-dark, .App main-dark {
   background-color: black;
   color: white;
 }
