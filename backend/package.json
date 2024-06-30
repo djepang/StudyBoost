@@ -1,7 +1,7 @@
 {
-    "name": "node-js-jws-auth-mongodb",
+    "name": "backend",
     "version": "1.0.0",
-    "description": "Your project description",
+    "description": "",
     "main": "server.js",
     "scripts": {
       "start": "node server.js"
@@ -11,8 +11,8 @@
       "express",
       "mongodb"
     ],
-    "author": "Your Name",
-    "license": "MIT",
+    "author": "",
+    "license": "ISC",
     "dependencies": {
       "bcrypt": "^5.1.1",
       "bcryptjs": "^2.4.3",

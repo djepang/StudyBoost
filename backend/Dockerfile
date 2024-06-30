@@ -1,15 +1,11 @@
-FROM node:16
+FROM node:14
 
-WORKDIR /usr/test/app
+WORKDIR /app
 
-COPY package*.json ./
+COPY . /app
 
-RUN npm install 
-
-COPY . .
-
-RUN npm rebuild bcrypt --build
+RUN npm install
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["node", "server.js"]

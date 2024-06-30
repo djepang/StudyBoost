@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: right;
   justify-content: right;
-  font-size: calc(20px + 2vmim);
+  font-size: calc(20px + 1vmim);
   color: white;
 }
 

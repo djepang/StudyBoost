@@ -38,7 +38,7 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 function App() {
   return (
     <ThemeProvider>
-      <div className='.App flex-col min-h-screen'>
+      <div className='.App'>
       <Header />
       <Routes>
         <Route path="/register" element={<Register />} />
