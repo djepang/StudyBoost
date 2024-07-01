@@ -4,7 +4,7 @@ import './App.css';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Main from './Components/Main/Main';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeProvider';
 import Home from './Pages/Home/Home';
 import Courses from './Pages/Courses/Courses';
 import Help from './Pages/Help/Help';
@@ -38,7 +38,7 @@ import Deutsch from './Pages/Deutsch/Deutsch';
 function App() {
   return (
     <ThemeProvider>
-      <div className='.App'>
+      <div className='App flex-col min-h-screen'>
       <Header />
       <Routes>
         <Route path="/register" element={<Register />} />

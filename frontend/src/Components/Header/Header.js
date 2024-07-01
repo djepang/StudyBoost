@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useTheme } from '../../context/ThemeContext';
+import { useTheme } from '../../context/ThemeProvider';
 import { Monitor, Sun, Moon } from 'lucide-react';
 
 const Header = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <header className="bg-gray-200 dark:bg-gray-800 p-4 flex justify-between items-center">
+        <header className={`bg-gray-200 dark:bg-gray-800 p-4 flex justify-between items-center ${theme}`}>
             <div className="flex items-center space-x-2">
                 <Monitor className="text-blue-600" />
                 <span className="text-lg text-blue-600 font-bold">StudyBoost</span>

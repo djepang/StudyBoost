@@ -3,10 +3,3 @@
 @tailwind utilities;
 
 
-.light {
-  background-color: #ffffff; /* Light mode background color */
-}
-
-.dark {
-  background-color: #333333; /* Dark mode background color */
-}

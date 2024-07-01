@@ -86,6 +86,15 @@ const Algorithmen = () => {
     }
   };
 
+  const restartQuiz = () => {
+    setAnswer('');
+    setShowResult(false);
+    setQuizIndex(0);
+    setQuizCompleted(false);
+    setQuizAnswers([]);
+    setProgress(0);
+  };
+
   return (
     <div className="algorithmen-container">
       <main className="main-content">
@@ -159,7 +168,7 @@ const Algorithmen = () => {
               <h2>Quiz abgeschlossen!</h2>
               <div className="quiz-results">
                 {quizAnswers.map((quiz, index) => (
-                  <div key={'result-${index}'} className="quiz-result">
+                  <div key={`result-${index}`} className="quiz-result">
                     <p>
                       <strong>Frage:</strong> {quiz.question}
                     </p>
@@ -174,9 +183,10 @@ const Algorithmen = () => {
                   </div>
                 ))}
               </div>
+              <button className="restart-button" onClick={restartQuiz}>Zurück zum Start</button>
             </div>
           )}
-          {showResult && (
+          {showResult && !quizCompleted && (
             <div className="result">
               <p>{quizAnswers[quizIndex].correct ? 'Richtig! 🎉' : 'Leider falsch. 😞'}</p>
               <p>Die richtige Antwort war: {quizzes[quizIndex].correctAnswer}</p>

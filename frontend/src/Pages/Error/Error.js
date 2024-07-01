@@ -1,14 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
 import cuteAvatar from '../../assets/cute-avatar.png';
 import './Error.css';
 
 const Error = () => {
     return (
         <div className="error-wrapper">
-            <Header />
             <div className="error-container">
                 <div className="error-header">
                     <img src={cuteAvatar} alt="Cute Avatar" className="cute-avatar" />
@@ -20,7 +17,6 @@ const Error = () => {
                     <img src={cuteAvatar} alt="Cute Avatar Footer" className="cute-avatar-footer" />
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

@@ -31,41 +31,47 @@ class KurseContent extends React.Component {
 
                 <nav className="w-full mt-8">
                     <ul className="flex flex-wrap justify-center gap-8">
-                        <li>
-                            <Link to="/Mathematik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={MathImage} alt="Mathematik" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                Mathematik
-                            </Link>
-                        </li>
+                    <li>
+    <Link to="/Mathematik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
+        <img src={MathImage} alt="Mathematik" className="h-10 w-10 mr-2 rounded-full object-cover" />
+        Mathematik
+    </Link>
+</li>
 
-                        <li>
-                            <Link to="/Physik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={PhysicsImage} alt="Physik" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                Physik
-                            </Link>
-                        </li>
 
-                        <li>
-                            <Link to="/English" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={EnglishImage} alt="Englisch" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                English
-                            </Link>
-                        </li>
 
-                        <li>
-                            <Link to="/Deutsch" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={DeutschImage} alt="Deutsch" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                Deutsch
-                            </Link>
-                        </li>
+<li>
+    <Link to="/Physik" className="flex items-center bg-gray-600 p-3 rounded-lg text-white shadow-md hover:bg-gray-700 transition">
+        <img src={PhysicsImage} alt="Physik" className="h-10 w-10 mr-2 rounded-full object-cover" />
+        Physik
+    </Link>
+</li>
+            
+<li>
+    <Link to="/English" className="flex items-center bg-yellow-500 p-3 rounded-lg text-white shadow-md hover:bg-yellow-600 transition">
+        <img src={EnglishImage} alt="Englisch" className="h-10 w-10 mr-2 rounded-full object-cover" />
+        English
+    </Link>
+</li>
 
-        
-                        <li>
-                            <Link to="/Biologie" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
-                                <img src={BiologieImage} alt="Biologie" className="h-10 w-10 mr-2 rounded-full object-cover" />
-                                Biologie
-                            </Link>
-                        </li>
+<li>
+    <Link to="/Deutsch" className="flex items-center bg-green-600 p-3 rounded-lg text-white shadow-md hover:bg-green-700 transition">
+        <img src={DeutschImage} alt="Deutsch" className="h-10 w-10 mr-2 rounded-full object-cover" />
+        Deutsch
+    </Link>
+</li>
+
+
+
+                        
+
+<li>
+    <Link to="/Biologie" className="flex items-center bg-green-600 p-3 rounded-lg text-white shadow-md hover:bg-green-700 transition">
+        <img src={BiologieImage} alt="Biologie" className="h-10 w-10 mr-2 rounded-full object-cover" />
+        Biologie
+    </Link>
+</li>
+
 
                         <li>
                             <Link to="/Informatik" className="flex items-center bg-blue-600 p-3 rounded-lg text-white shadow-md hover:bg-blue-700 transition">
