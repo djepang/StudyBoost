@@ -1,0 +1,48 @@
+.Woertersaetze {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.Woertersaetze-header {
+  background-color: #58ec76;
+  color: #191a1e;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.Woertersaetze-header h1 {
+  font-size: 2.5em;
+}
+
+/* Hauptinhalt */
+main {
+  padding: 20px;
+}
+
+/* Abschnitt: Einführung Wörtersätze */
+#introduction {
+  margin-bottom: 40px;
+}
+
+#introduction h2 {
+  font-size: 2em;
+  color: #161a17;
+}
+
+/* Wörtersätze Grid */
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+/* Wörtersätze Items */
+.word-item {
+  background-color: #8fe8a1;
+  border: 1px solid #1e1d21;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}

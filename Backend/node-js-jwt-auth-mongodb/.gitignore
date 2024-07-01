@@ -1,8 +1,0 @@
-node_modules
-package-lock.json
-<<<<<<< HEAD
-env
-=======
-.env
-.vscode
->>>>>>> 06b4ffe67a3ff7526103f4d8877d8037278f373d

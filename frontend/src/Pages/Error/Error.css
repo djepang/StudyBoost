@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.error-wrapper {
+    perspective: 1000px;
+}
+
+.error-container {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(145deg, #f6f6f6, #e0e0e0);
+    box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    transform-style: preserve-3d;
+    animation: tilt 10s infinite linear;
+}
+
+
+@keyframes tilt {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(360deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+.error-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.error-title {
+    font-size: 3em;
+    color: #e81f1f;
+    text-shadow: 2px 2px 4px #ff4747;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 1.5em;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.cute-avatar {
+    width: 150px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+.cute-avatar-footer {
+    width: 100px;
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.back-home-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffa502;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #d48806, -3px -3px 10px #ffb737;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.back-home-button:hover {
+    background-color: #e59400;
+    box-shadow: 5px 5px 15px #b57300, -5px -5px 15px #ffb737;
+    transform: translateZ(10px);
+}
+
+.error-footer {
+    margin-top: 30px;
+}

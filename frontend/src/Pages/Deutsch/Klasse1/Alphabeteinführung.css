@@ -1,0 +1,80 @@
+.Alphabeteinführung-header {
+  background-color: #7deed8;
+  color: rgb(22, 21, 42);
+  padding: 30px;
+  text-align: center;
+  border-radius: 1px 1px 0 0;
+}
+
+.Alphabeteinführung-header h1 {
+  margin: 4;
+
+}
+
+main {
+  padding: 20px;
+  p {
+    color: #101310;
+  }
+}
+
+#introduction, #alphabet-songs, #letter-recognition-images, #videos {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #101310;
+}
+
+.alphabet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.alphabet-item {
+  background-color: #e7ede9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  text-align: center;
+}
+
+#alphabet-songs .video-container, #videos .video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-card {
+  background-color: #4fa3e3;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 550px; /* Einheitliche Breite für alle Bildkarten */
+  height: 550px; /* Einheitliche Höhe für alle Bildkarten */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  max-height: 65%;
+  border-radius: 5px;
+}
+
+

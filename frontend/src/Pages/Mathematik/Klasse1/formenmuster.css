@@ -1,0 +1,132 @@
+.formen-muster-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #96f28b;
+  color: rgb(25, 25, 30);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 3rem; /* Große Schriftart */
+}
+
+.introduction {
+  background-color: #147ee8; 
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 1.5rem; /* Große Schriftart */
+}
+
+.shapes, .patterns, .exercise {
+  background-color: #05de51;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: rgb(49, 44, 44);
+  font-size: 1.5rem; /* Große Schriftart */
+}
+
+.shape-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shape-card {
+  text-align: center;
+  margin: 10px;
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 4rem; /* Emoji Größe */
+}
+
+.pattern-board {
+  background-color: hsl(113, 94%, 62%);
+  border: 2px dashed #82c96b;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.next-button {
+  background-color: #071e9f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem; /* Große Schriftart */
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0c28c9;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 1.5rem; /* Große Schriftart */
+}
+
+.question {
+  margin: 20px 0;
+}
+
+.question p {
+  font-size: 1.5rem; /* Große Schriftart */
+}
+
+.question button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem; /* Große Schriftart */
+  cursor: pointer;
+  margin: 5px;
+}
+
+.video-section {
+  background-color: #20f632;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: rgb(39, 35, 35);
+  font-size: 1.5rem; /* Große Schriftart */
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.video-container iframe {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.feedback {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.feedback span {
+  margin-left: 10px;
+  font-size: 2rem; /* Emoji Größe */
+}
